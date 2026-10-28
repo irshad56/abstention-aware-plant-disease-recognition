@@ -1,0 +1,10 @@
+{
+  "hf_model_id": "openai/clip-vit-base-patch32",
+  "manifest_file": "clip_plant_village_manifest.csv",
+  "manifest_sha256": "8c21cc1677a25a9ff76727c45e1fbe0f33dbd48eb3e7d7ca0eb24f948c6fbdc5",
+  "manifest_rows": 67111,
+  "class_count": 29,
+  "torch_version": "2.11.0+cu130",
+  "saved_on_device": "cuda:0",
+  "note": "Keep the class mapping and manifest with the model artifacts. The pretrained CLIP backbone is saved separately from the projection-adapted experiment."
+}

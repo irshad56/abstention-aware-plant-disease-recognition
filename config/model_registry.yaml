@@ -1,0 +1,95 @@
+models:
+  convnext_tiny:
+    id: "convnext_tiny"
+    display_name: "ConvNeXt-Tiny"
+    adapter_class: "ConvNeXtAdapter"
+    architecture: "torchvision.models.convnext_tiny"
+    num_classes: 29
+    candidate_paths:
+      - "artifacts/models/01_ConvNeXt_Tiny/checkpoint.pt"
+      - "artifacts/models/convnext_tiny/checkpoint.pt"
+      - "convnext_tiny_final.pth"
+      - "convnext_final_complete.zip"
+    expected_keys:
+      - "features"
+      - "classifier"
+    input_size: 224
+    crop_size: 224
+    resize_size: 236
+    mean: [0.485, 0.456, 0.406]
+    std: [0.229, 0.224, 0.225]
+
+  efficientnetv2_b0:
+    id: "efficientnetv2_b0"
+    display_name: "EfficientNetV2-B0"
+    adapter_class: "EfficientNetV2Adapter"
+    architecture: "tf_efficientnetv2_b0"
+    num_classes: 29
+    candidate_paths:
+      - "artifacts/models/02_EfficientNetV2_B0/checkpoint.pt"
+      - "artifacts/models/efficientnetv2_b0/checkpoint.pt"
+      - "PlantVillage_EfficientNetV2-B0_best.pth"
+      - "PlantVillage_EfficientNetV2-B0_best_final.pth"
+    input_size: 224
+    crop_size: 224
+    resize_size: 224
+    mean: [0.485, 0.456, 0.406]
+    std: [0.229, 0.224, 0.225]
+
+  dinov2_linear:
+    id: "dinov2_linear"
+    display_name: "DINOv2-Small (Linear Head)"
+    adapter_class: "DINOv2LinearAdapter"
+    architecture: "facebook/dinov2-small"
+    feature_dimension: 384
+    num_classes: 29
+    candidate_paths:
+      - "artifacts/models/03_DINOv2_Small_Linear/checkpoint.pth"
+      - "artifacts/models/dinov2_linear/checkpoint.pth"
+      - "dinov2_linear_best.pth"
+    required_checkpoint_keys:
+      - "model_state_dict"
+      - "feature_mean"
+      - "feature_std"
+    input_size: 518
+    crop_size: 518
+    resize_size: 518
+    mean: [0.485, 0.456, 0.406]
+    std: [0.229, 0.224, 0.225]
+
+  dinov2_finetuned:
+    id: "dinov2_finetuned"
+    display_name: "DINOv2-Small (Fine-Tuned)"
+    adapter_class: "DINOv2FineTunedAdapter"
+    architecture: "facebook/dinov2-small"
+    feature_dimension: 384
+    num_classes: 29
+    candidate_paths:
+      - "artifacts/models/04_DINOv2_Small_FineTuned/checkpoint.pth"
+      - "artifacts/models/dinov2_finetuned/checkpoint.pth"
+      - "dinov2_finetuned_best.pth"
+    remapping_needed: true
+    input_size: 518
+    crop_size: 518
+    resize_size: 518
+    mean: [0.485, 0.456, 0.406]
+    std: [0.229, 0.224, 0.225]
+
+  clip_vit_b32:
+    id: "clip_vit_b32"
+    display_name: "CLIP ViT-B/32 (Visual + MLP)"
+    adapter_class: "CLIPMLPAdapter"
+    architecture: "openai/clip-vit-base-patch32"
+    embedding_dimension: 512
+    mlp_hidden_dimension: 256
+    num_classes: 29
+    candidate_paths:
+      - "artifacts/models/clip_vit_b32/clip_final_artifacts/clip_frozen_mlp/clip_mlp_weights.pth"
+      - "artifacts/models/clip_vit_b32/clip_frozen_mlp/clip_mlp_weights.pth"
+      - "artifacts/models/05_CLIP_ViT_B32_Frozen_MLP/clip_final_artifacts.zip"
+      - "clip_final_artifacts.zip"
+    input_size: 224
+    crop_size: 224
+    resize_size: 224
+    mean: [0.48145466, 0.4578275, 0.40821073]
+    std: [0.26862954, 0.26130258, 0.27577711]

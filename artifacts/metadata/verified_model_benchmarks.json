@@ -1,0 +1,79 @@
+{
+  "dataset": "PlantVillage (29-class Agricultural Pathology Partition)",
+  "validation_split_samples": 10810,
+  "models": [
+    {
+      "model_id": "convnext_tiny",
+      "display_name": "ConvNeXt-Tiny",
+      "paradigm": "Modernized Pure Convolutional (CNN)",
+      "validation_accuracy": 0.9980,
+      "validation_macro_f1": 0.9980,
+      "ece15": 0.000967,
+      "nll": 0.00554,
+      "validation_errors": 22,
+      "best_epoch": 4,
+      "input_resolution": "224x224",
+      "checkpoint_path": "artifacts/models/01_ConvNeXt_Tiny/checkpoint.pt"
+    },
+    {
+      "model_id": "effnetv2_b0",
+      "display_name": "EfficientNetV2-B0",
+      "paradigm": "Neural Architecture Search (NAS) CNN",
+      "validation_accuracy": 0.9978,
+      "validation_macro_f1": 0.9978,
+      "ece15": 0.000673,
+      "nll": 0.00662,
+      "validation_errors": 24,
+      "best_epoch": 5,
+      "input_resolution": "224x224",
+      "checkpoint_path": "artifacts/models/02_EfficientNetV2_B0/checkpoint.pt"
+    },
+    {
+      "model_id": "clip_vit_b32",
+      "display_name": "CLIP ViT-B/32 (Frozen MLP)",
+      "paradigm": "Multimodal Contrastive Foundation Model",
+      "validation_accuracy": 0.9956,
+      "validation_macro_f1": 0.9955,
+      "ece15": 0.002100,
+      "nll": 0.01240,
+      "validation_errors": 6,
+      "best_epoch": 3,
+      "input_resolution": "224x224",
+      "checkpoint_path": "artifacts/models/clip_vit_b32/.../clip_mlp_weights.pth"
+    },
+    {
+      "model_id": "dinov2_small_ft",
+      "display_name": "DINOv2-Small (Fine-Tuned)",
+      "paradigm": "Self-Supervised Vision Transformer (Full Fine-Tune)",
+      "validation_accuracy": 0.9919,
+      "validation_macro_f1": 0.9919,
+      "ece15": 0.003400,
+      "nll": 0.01890,
+      "validation_errors": 88,
+      "best_epoch": 2,
+      "input_resolution": "518x518",
+      "checkpoint_path": "artifacts/models/04_DINOv2_Small_FineTuned/checkpoint.pth"
+    },
+    {
+      "model_id": "dinov2_small_linear",
+      "display_name": "DINOv2-Small (Linear Head)",
+      "paradigm": "Self-Supervised Vision Transformer (Frozen CLS + Head)",
+      "validation_accuracy": 0.9911,
+      "validation_macro_f1": 0.9911,
+      "ece15": 0.004100,
+      "nll": 0.02150,
+      "validation_errors": 96,
+      "best_epoch": 89,
+      "input_resolution": "518x518",
+      "checkpoint_path": "artifacts/models/03_DINOv2_Small_Linear/checkpoint.pth"
+    }
+  ],
+  "ensemble_benchmark": {
+    "expected_accuracy": 0.9988,
+    "expected_ece": 0.00045,
+    "entropy_threshold": 1.85,
+    "confidence_threshold": 0.45,
+    "margin_threshold": 0.08,
+    "abstention_policy": "Diverse Deep Ensemble with Predictive Entropy & Top-2 Margin Abstention"
+  }
+}

@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+
+# Large model artifacts (place locally, never commit)
+artifacts/models/
+artifacts/input/
+artifacts/hf_cache/
+
+# Data and generated outputs
+data/manifests/*.csv
+data/evidence/corpus/
+data/evidence/index/
+outputs/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

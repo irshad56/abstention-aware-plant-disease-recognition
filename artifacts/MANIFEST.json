@@ -1,0 +1,44 @@
+{
+  "bundle_name": "Finalized Plant Disease Models",
+  "created_utc": "2026-10-26T20:22:43.859166Z",
+  "training_performed": false,
+  "checkpoints_modified": false,
+  "models": [
+    {
+      "artifact": "01_ConvNeXt_Tiny/checkpoint.pt",
+      "source": "/content/drive/MyDrive/Mini project Models/research_pipeline_v1/checkpoints/b4r_v2train_run1/convnext_tiny_best.pt",
+      "size_bytes": 111440347
+    },
+    {
+      "artifact": "02_EfficientNetV2_B0/checkpoint.pt",
+      "source": "/content/drive/MyDrive/Mini project Models/research_pipeline_v1/checkpoints/b4r_v2train_run1/effnetv2_b0_best.pt",
+      "size_bytes": 23980399
+    },
+    {
+      "artifact": "03_DINOv2_Small_Linear/checkpoint.pth",
+      "source": "/content/drive/MyDrive/Mini project Models/training_runs/plant_cpu_tpu_20261022T193233Z/stage9f_dinov2_clean/linear_classifier/dinov2_linear_clean_best.pth",
+      "size_bytes": 51759
+    },
+    {
+      "artifact": "04_DINOv2_Small_FineTuned/checkpoint.pth",
+      "source": "/content/drive/MyDrive/Mini project Models/dinov2_finetuned_best.pth",
+      "size_bytes": 88360479
+    },
+    {
+      "artifact": "05_CLIP_ViT_B32_Frozen_MLP/clip_final_artifacts.zip",
+      "source": "/content/drive/MyDrive/Mini project Models/clip_final_artifacts.zip",
+      "size_bytes": 790015706
+    },
+    {
+      "artifact": "metadata/class_mapping.json",
+      "source": "/content/drive/MyDrive/Mini project Models/grouped_evaluation/class_mapping.json",
+      "size_bytes": 1996
+    }
+  ],
+  "notes": [
+    "Contains the five existing model artifacts and class mapping.",
+    "The CLIP artifact is included as its original ZIP archive.",
+    "DINOv2 models require compatible Transformers/Hugging Face backbone configuration when loading.",
+    "Smoke-test success does not establish full-test-set accuracy."
+  ]
+}

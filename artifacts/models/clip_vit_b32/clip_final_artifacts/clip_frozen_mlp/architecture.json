@@ -1,0 +1,18 @@
+{
+  "model_type": "CLIP ViT-B/32 + frozen-embedding MLP",
+  "hf_model_id": "openai/clip-vit-base-patch32",
+  "input_dim": 512,
+  "hidden_dim": 256,
+  "num_classes": 29,
+  "dropout": 0.2,
+  "embedding": "CLIP visual projection output, L2-normalized",
+  "classifier_architecture": [
+    "Linear(512, 256)",
+    "LayerNorm(256)",
+    "GELU",
+    "Dropout(0.20)",
+    "Linear(256, 29)"
+  ],
+  "inference_mode": "image -> CLIP processor -> CLIP image embedding -> L2 normalize -> MLP logits -> softmax",
+  "weights_file": "clip_mlp_weights.pth"
+}

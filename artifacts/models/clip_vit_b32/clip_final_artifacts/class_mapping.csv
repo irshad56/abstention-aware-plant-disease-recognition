@@ -1,0 +1,30 @@
+class_idx,class_name
+0,Apple__Apple Scab
+1,Apple__Black Rot
+2,Apple__Cedar Apple Rust
+3,Apple__Healthy
+4,Bell Pepper__Bacterial Spot
+5,Bell Pepper__Healthy
+6,Cherry__Healthy
+7,Cherry__Powdery Mildew
+8,Corn (Maize)__Cercospora Leaf Spot
+9,Corn (Maize)__Common Rust 
+10,Corn (Maize)__Healthy
+11,Corn (Maize)__Northern Leaf Blight
+12,Grape__Black Rot
+13,Grape__Esca (Black Measles)
+14,Grape__Healthy
+15,Grape__Leaf Blight
+16,Peach__Bacterial Spot
+17,Peach__Healthy
+18,Potato__Early Blight
+19,Potato__Healthy
+20,Potato__Late Blight
+21,Strawberry__Healthy
+22,Strawberry__Leaf Scorch
+23,Tomato__Bacterial Spot
+24,Tomato__Early Blight
+25,Tomato__Healthy
+26,Tomato__Late Blight
+27,Tomato__Septoria Leaf Spot
+28,Tomato__Yellow Leaf Curl Virus

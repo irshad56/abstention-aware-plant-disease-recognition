@@ -1,0 +1,12 @@
+{
+  "model_type": "CLIP ViT-B/32 with adapted visual projection + MLP",
+  "hf_model_id": "openai/clip-vit-base-patch32",
+  "visual_projection": "Linear(768, 512, bias=False)",
+  "input_dim": 512,
+  "hidden_dim": 256,
+  "num_classes": 29,
+  "dropout": 0.2,
+  "best_validation_accuracy": 99.25416424960636,
+  "best_epoch": 3,
+  "weights_file": "adapted_projection_and_mlp.pth"
+}

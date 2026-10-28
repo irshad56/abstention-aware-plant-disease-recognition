@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plant-disease-agent"
+version = "0.1.0"
+description = "Abstention-Aware Plant Disease Recognition Using Diverse Deep Ensembles and Agentic Evidence Retrieval"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "Principal AI/ML Engineer & Research Team" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    "numpy>=1.24.0,<2.0.0",
+    "pillow>=9.5.0",
+    "pydantic>=2.4.0",
+    "pyyaml>=6.0.1",
+    "requests>=2.31.0",
+    "streamlit>=1.28.0",
+]
+
+[project.optional-dependencies]
+ml = [
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "timm>=0.9.2",
+    "transformers>=4.35.0",
+    "safetensors>=0.4.0"
+]
+agent = [
+    "langgraph>=0.0.20",
+    "langchain-core>=0.1.20",
+    "groq>=0.4.0"
+]
+test = [
+    "pytest>=7.4.0",
+    "pytest-mock>=3.11.0"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    "ignore::UserWarning"
+]

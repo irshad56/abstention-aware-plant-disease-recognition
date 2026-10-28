@@ -1,0 +1,50 @@
+{
+    "model": "ConvNeXt-Tiny",
+    "dataset": "PlantVillage Dataset Updated",
+    "num_classes": 29,
+    "image_size": 224,
+    "train_samples": 53693,
+    "validation_samples": 12067,
+    "test_samples": 1358,
+    "stage1": {
+        "epochs": 3,
+        "learning_rate": 0.001,
+        "best_validation_accuracy": 0.987
+    },
+    "stage2": {
+        "epochs": 4,
+        "feature_learning_rate": 1e-05,
+        "classifier_learning_rate": 0.0005,
+        "best_validation_accuracy": 0.9929559956907268
+    },
+    "test": {
+        "accuracy": 0.9933726067746687,
+        "macro_precision": 0.9934736069101402,
+        "macro_recall": 0.9934054656345297,
+        "macro_f1": 0.9933697825021146,
+        "weighted_precision": 0.9934906585303946,
+        "weighted_recall": 0.9933726067746687,
+        "weighted_f1": 0.9933620195246295,
+        "samples": 1358
+    },
+    "calibration": {
+        "ece": 0.10235299066872237,
+        "brier_score": 0.0292510986328125
+    },
+    "confidence": {
+        "mean": 0.89111328125,
+        "correct_mean": 0.8935546875,
+        "incorrect_mean": 0.5205078125,
+        "max_incorrect": 0.68896484375
+    },
+    "abstention": {
+        "validation_threshold": 0.9400000000000004,
+        "test_coverage": 0.3792341678939617,
+        "test_abstention_rate": 0.6207658321060383,
+        "test_selective_accuracy": 1.0,
+        "test_selective_risk": 0.0
+    },
+    "risk_coverage": {
+        "validation_aurc": 0.0003721216255063617
+    }
+}

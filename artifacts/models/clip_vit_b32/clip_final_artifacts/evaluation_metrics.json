@@ -1,0 +1,24 @@
+{
+  "dataset": "PlantVillage updated dataset",
+  "manifest_rows": 67111,
+  "num_classes": 29,
+  "frozen_embedding_mlp": {
+    "recorded_test_samples": 1354,
+    "recorded_correct": 1348,
+    "recorded_errors": 6,
+    "recorded_test_accuracy": 0.995569,
+    "recorded_macro_f1": 0.9955,
+    "note": "Recorded from Cell 23. Revalidate against the saved checkpoint before publication."
+  },
+  "projection_adapted": {
+    "test_samples": 1354,
+    "correct": 1344,
+    "errors": 10,
+    "test_accuracy": 0.992614,
+    "macro_precision": 0.992611,
+    "macro_recall": 0.992815,
+    "macro_f1": 0.992496,
+    "best_validation_accuracy": 99.25416424960636,
+    "best_epoch": 3
+  }
+}

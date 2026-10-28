@@ -1,0 +1,125 @@
+# Plant Disease Intelligence - single configuration file.
+# Paths are relative to the project root unless absolute.
+# Environment variables (see .env.example) override the first four paths below.
+
+paths:
+  artifact_root: artifacts
+  class_mapping: artifacts/metadata/class_mapping.json
+  clip_archive: artifacts/input/clip_final_artifacts.zip
+  hf_cache: artifacts/hf_cache
+  dataset_root: null            # folder containing the PlantVillage images
+  manifest: data/manifests/source_grouped_split_manifest_v2.csv
+  evidence_sources: data/evidence/sources.yaml
+  evidence_local_dir: data/evidence/local          # your own saved documents (optional)
+  evidence_corpus: data/evidence/corpus/documents.jsonl
+  outputs: outputs
+
+app:
+  device: auto                  # auto | cpu | cuda
+  num_classes: 29
+  log_level: INFO
+  max_upload_mb: 15
+
+# Each model's `verified` flag says whether its preprocessing was confirmed
+# from training metadata. false = provisional default, to be confirmed by
+# `python scripts/setup_artifacts.py inspect`.
+models:
+  convnext_tiny:
+    enabled: true
+    display_name: ConvNeXt-Tiny
+    type: convnext
+    checkpoint: artifacts/models/convnext_tiny/checkpoint.pt
+    preprocessing:
+      verified: false
+      resize: 224
+      interpolation: bilinear
+      mean: [0.485, 0.456, 0.406]
+      std: [0.229, 0.224, 0.225]
+
+  efficientnetv2_b0:
+    enabled: true
+    display_name: EfficientNetV2-B0
+    type: efficientnet
+    timm_name: tf_efficientnetv2_b0
+    checkpoint: artifacts/models/efficientnetv2_b0/checkpoint.pt
+    preprocessing:
+      verified: false
+      resize: 224
+      interpolation: bicubic
+      mean: [0.485, 0.456, 0.406]
+      std: [0.229, 0.224, 0.225]
+
+  dinov2_linear:
+    enabled: true
+    display_name: DINOv2-Small (linear)
+    type: dinov2_linear
+    backbone: facebook/dinov2-small
+    checkpoint: artifacts/models/dinov2_linear/checkpoint.pth
+    preprocessing:
+      verified: true            # stated in project metadata
+      resize: 518
+      interpolation: bicubic
+      mean: [0.485, 0.456, 0.406]
+      std: [0.229, 0.224, 0.225]
+
+  dinov2_finetuned:
+    enabled: true
+    display_name: DINOv2-Small (fine-tuned)
+    type: dinov2_finetuned
+    backbone: facebook/dinov2-small
+    checkpoint: artifacts/models/dinov2_finetuned/checkpoint.pth
+    preprocessing:
+      verified: false           # assumed same as linear model; confirm
+      resize: 518
+      interpolation: bicubic
+      mean: [0.485, 0.456, 0.406]
+      std: [0.229, 0.224, 0.225]
+
+  clip_vit_b32:
+    enabled: true
+    display_name: CLIP ViT-B/32 + MLP
+    type: clip_mlp
+    backbone: openai/clip-vit-base-patch32
+    backbone_dir: artifacts/models/clip_vit_b32/backbone
+    mlp_dir: artifacts/models/clip_vit_b32/mlp
+    preprocessing:
+      verified: false           # uses the CLIP processor; parity unconfirmed
+      use_clip_processor: true
+
+ensemble:
+  weights: null                 # null = equal weights; or {model_name: weight}
+  min_models: 3                 # fewer successful models than this => abstain
+
+# PROVISIONAL, UNCALIBRATED thresholds. Replace with values fitted on
+# validation data (python scripts/evaluate.py --fit-calibration). Never tune on test.
+abstention:
+  min_confidence: 0.70          # ensemble top-class probability
+  max_entropy: 1.0              # nats (maximum possible is ln 29 = 3.37)
+  min_margin: 0.20              # top-1 minus top-2 probability
+  max_disagreement: 0.40        # fraction of models disagreeing with ensemble
+  abstain_on_poor_quality: true # blurry / dark / low-contrast image => abstain
+  min_image_side: 64
+  min_sharpness: 20.0           # Laplacian variance; heuristic only
+
+retrieval:
+  top_k: 4                      # evidence passages shown per diagnosis
+  min_score: 0.05               # minimum TF-IDF similarity to count as relevant
+  chunk_chars: 900              # passage size when splitting documents
+  chunk_overlap: 150
+  request_timeout_s: 20
+  max_download_mb: 5
+  user_agent: "PlantDiseaseEvidenceBot/0.1 (student research project, VRSEC)"
+  # Only these domains/suffixes may be fetched or cited.
+  allowed_domains:
+    - ".gov"
+    - ".edu"
+    - "apsnet.org"
+    - "plantvillage.psu.edu"
+    - "fao.org"
+    - "cabi.org"
+
+llm:
+  enabled: true                 # falls back to a plain evidence summary if no key
+  provider: groq
+  temperature: 0.2
+  max_tokens: 700

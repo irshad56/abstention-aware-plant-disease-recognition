@@ -1,0 +1,198 @@
+{
+  "search_root": "C:\\Users\\irfan\\Downloads\\irshad bin\\Mini Project Documents\\artifacts\\models",
+  "torch_available": true,
+  "models": {
+    "convnext_tiny": {
+      "status": "CHECKPOINT_FILE",
+      "path": "convnext_tiny_final.pth",
+      "details": {
+        "size_mb": 106.28,
+        "type": "dict",
+        "top_level_keys": [
+          "model_state_dict",
+          "model_name",
+          "architecture",
+          "class_names",
+          "class_to_idx",
+          "idx_to_class",
+          "normalization",
+          "training",
+          "fine_tuning",
+          "evaluation"
+        ],
+        "total_keys": 13,
+        "num_tensors": 182,
+        "sample_shapes": {
+          "features.0.0.weight": [
+            96,
+            3,
+            4,
+            4
+          ],
+          "features.0.0.bias": [
+            96
+          ],
+          "features.0.1.weight": [
+            96
+          ],
+          "features.0.1.bias": [
+            96
+          ],
+          "features.1.0.layer_scale": [
+            96,
+            1,
+            1
+          ],
+          "features.1.0.block.0.weight": [
+            96,
+            1,
+            7,
+            7
+          ]
+        }
+      }
+    },
+    "efficientnetv2_b0": {
+      "status": "CHECKPOINT_FILE",
+      "path": "PlantVillage_EfficientNetV2-B0_best.pth",
+      "details": {
+        "size_mb": 68.07,
+        "type": "dict",
+        "top_level_keys": [
+          "epoch",
+          "model_state_dict",
+          "optimizer_state_dict",
+          "val_loss",
+          "val_accuracy",
+          "classes",
+          "class_to_idx",
+          "img_size"
+        ],
+        "total_keys": 8,
+        "num_tensors": 420,
+        "sample_shapes": {
+          "conv_stem.weight": [
+            32,
+            3,
+            3,
+            3
+          ],
+          "bn1.weight": [
+            32
+          ],
+          "bn1.bias": [
+            32
+          ],
+          "bn1.running_mean": [
+            32
+          ],
+          "bn1.running_var": [
+            32
+          ],
+          "bn1.num_batches_tracked": []
+        }
+      }
+    },
+    "dinov2_linear": {
+      "status": "CHECKPOINT_FILE",
+      "path": "dinov2_linear_best.pth",
+      "details": {
+        "size_mb": 0.04,
+        "type": "dict",
+        "top_level_keys": [
+          "model_state_dict",
+          "best_val_accuracy",
+          "epoch",
+          "feature_dim",
+          "num_classes",
+          "model_id",
+          "learning_rate",
+          "weight_decay",
+          "label_smoothing"
+        ],
+        "total_keys": 9,
+        "num_tensors": 2,
+        "sample_shapes": {
+          "weight": [
+            29,
+            384
+          ],
+          "bias": [
+            29
+          ]
+        }
+      }
+    },
+    "dinov2_finetuned": {
+      "status": "CHECKPOINT_FILE",
+      "path": "dinov2_finetuned_best.pth",
+      "details": {
+        "size_mb": 84.27,
+        "type": "dict",
+        "top_level_keys": [
+          "model_state_dict",
+          "classifier_state_dict",
+          "best_val_accuracy",
+          "epoch",
+          "backbone_lr",
+          "classifier_lr",
+          "weight_decay",
+          "label_smoothing",
+          "model_id",
+          "feature_dim"
+        ],
+        "total_keys": 11,
+        "num_tensors": 223,
+        "sample_shapes": {
+          "embeddings.cls_token": [
+            1,
+            1,
+            384
+          ],
+          "embeddings.mask_token": [
+            1,
+            384
+          ],
+          "embeddings.position_embeddings": [
+            1,
+            1370,
+            384
+          ],
+          "embeddings.patch_embeddings.projection.weight": [
+            384,
+            3,
+            14,
+            14
+          ],
+          "embeddings.patch_embeddings.projection.bias": [
+            384
+          ],
+          "encoder.layer.0.norm1.weight": [
+            384
+          ]
+        }
+      }
+    },
+    "clip_vit_b32": {
+      "status": "ZIP_ARCHIVE",
+      "path": "clip_final_artifacts.zip",
+      "entries_count": 21,
+      "entries_sample": [
+        "clip_final_artifacts/",
+        "clip_final_artifacts/clip_frozen_mlp/",
+        "clip_final_artifacts/clip_projection_adapted/",
+        "clip_final_artifacts/clip_plant_village_manifest.csv",
+        "clip_final_artifacts/reproducibility.json",
+        "clip_final_artifacts/class_mapping.csv"
+      ]
+    }
+  },
+  "metadata": {
+    "class_mapping": {
+      "path": "artifacts\\metadata\\class_mapping.json",
+      "num_classes": 29,
+      "verified": true
+    }
+  },
+  "issues": []
+}

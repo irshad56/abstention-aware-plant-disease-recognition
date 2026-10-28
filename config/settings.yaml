@@ -1,0 +1,70 @@
+app:
+  title: "Abstention-Aware Plant Disease Recognition"
+  device: "auto"
+  num_classes: 29
+  max_upload_size_mb: 15
+  allowed_extensions:
+    - ".jpg"
+    - ".jpeg"
+    - ".png"
+    - ".webp"
+  image_validation:
+    min_width: 64
+    min_height: 64
+    max_aspect_ratio: 4.0
+    min_sharpness_variance: 15.0
+    min_mean_intensity: 0.05
+    max_mean_intensity: 0.95
+
+abstention:
+  # ── Calibrated for 29-class classification ──────────────────────────────────
+  # Max entropy for 29 uniform classes = ln(29) ≈ 3.367 nats.
+  # Thresholds below are set at ~55% of max entropy so that genuine in-domain
+  # images with moderate inter-model spread are not incorrectly abstained.
+  min_confidence: 0.45           # lowered from 0.70 (29-class softmax spreads probability)
+  max_predictive_entropy: 1.85   # ~55% of ln(29)=3.367 — was 1.20 (only 35%)
+  min_margin: 0.08               # lowered from 0.15 (top-2 gap is naturally smaller at 29 classes)
+  max_model_disagreement: 0.60   # raised from 0.40 (allow more inter-model spread)
+  min_participating_models: 3
+  abstain_on_quality_failure: true
+
+ensemble:
+  method: "probability_averaging"
+  weights: null
+
+retrieval:
+  top_k: 4
+  min_relevance_score: 0.08
+  enable_live_search: false
+  request_timeout_seconds: 15
+  allowed_domains:
+    - ".edu"
+    - ".gov"
+    - "apsnet.org"
+    - "cabi.org"
+    - "fao.org"
+    - "plantvillage.psu.edu"
+    - "extension.psu.edu"
+    - "ipm.ucanr.edu"
+    - "cropprotectionnetwork.org"
+    - "doi.org"
+    - "nature.com"
+    - "springer.com"
+    - "sciencedirect.com"
+    - "wiley.com"
+    - "frontiersin.org"
+    - "academic.oup.com"
+    - "ncbi.nlm.nih.gov"
+
+llm:
+  provider: "groq"
+  model: "openai/gpt-oss-120b"
+  temperature: 0.1
+  timeout_seconds: 15
+  fallback_to_template: true
+
+paths:
+  artifacts_dir: "artifacts"
+  class_mapping: "artifacts/metadata/class_mapping.json"
+  evidence_corpus: "data/evidence/corpus.json"
+  outputs_dir: "outputs"

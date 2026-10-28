@@ -1,0 +1,49 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+*.log
+outputs/*.log
+
+# Sensitive Information
+.env
+*.pem
+*.key
+
+# Model weights & large archives (user supplies locally)
+# Individual local checkpoints placed by user are ignored to prevent accidental git bloat
+artifacts/models/**/*.pth
+artifacts/models/**/*.pt
+artifacts/models/**/*.safetensors
+*.zip
+*.pth
+*.pt
+
+# Streamlit runtime
+.streamlit/
+
+# Video & media recordings
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Evaluation runs
+outputs/evaluations/*
+!outputs/evaluations/.gitkeep

@@ -1,0 +1,81 @@
+# Evidence sources for the explanation step.
+#
+# Only pages listed here are ever fetched, stored and cited. Nothing is invented:
+# `python scripts/build_evidence.py` downloads each page, keeps its real text, and the
+# app can only cite passages that came from these pages.
+#
+# Each entry:
+#   id           required  short unique name
+#   url          required  the page that will be cited (must be on an allowed domain,
+#                          see retrieval.allowed_domains in configs/config.yaml)
+#   publisher    required  who publishes it
+#   source_type  required  government | university_extension | plant_pathology_society
+#                          | peer_reviewed | other
+#   classes      optional  exact class names from artifacts/metadata/class_mapping.json
+#                          that this page is relevant to (recommended)
+#   keywords     optional  extra search words (disease, pathogen or vector names)
+#   title        optional  page <title> is used if omitted
+#   local_file   optional  use your own saved copy (.txt, .md or .html) instead of
+#                          downloading, e.g. for a PDF you converted to text. `url`
+#                          is still required: it is the link shown as the citation.
+#
+# These URLs were found through web search and are real pages, but pages move or
+# change. build_evidence.py reports any that fail to load; replace those entries.
+#
+# STARTER LIST: only the two classes whose exact names are known from the project
+# notes. Open artifacts/metadata/class_mapping.json and add entries for the other
+# classes (aim for at least one government or university page per class). Classes
+# without evidence are handled honestly: the app says no evidence is available.
+
+sources:
+  # ---- Apple__Apple Scab -------------------------------------------------
+  - id: unl-apple-scab
+    url: https://extensionpubs.unl.edu/publication/1093/html/view
+    publisher: University of Nebraska-Lincoln Extension
+    source_type: university_extension
+    classes: ["Apple__Apple Scab"]
+    keywords: ["apple scab", "venturia inaequalis"]
+
+  - id: illinois-apple-scab
+    url: https://selectors.extension.illinois.edu/pathogen/apple-scab
+    publisher: University of Illinois Extension
+    source_type: university_extension
+    classes: ["Apple__Apple Scab"]
+    keywords: ["apple scab", "venturia inaequalis"]
+
+  - id: maine-apple-scab
+    url: https://maine.gov/DACF/php/gotpests/diseases/apple-scab.htm
+    publisher: Maine Department of Agriculture, Conservation and Forestry
+    source_type: government
+    classes: ["Apple__Apple Scab"]
+    keywords: ["apple scab", "venturia inaequalis"]
+
+  # ---- Tomato__Yellow Leaf Curl Virus ------------------------------------
+  - id: ucipm-tomato-yellow-leaf-curl
+    url: https://ipm.ucanr.edu/agriculture/tomato/tomato-yellow-leaf-curl/
+    publisher: UC Statewide IPM Program, University of California Agriculture and Natural Resources
+    source_type: university_extension
+    classes: ["Tomato__Yellow Leaf Curl Virus"]
+    keywords: ["tomato yellow leaf curl virus", "tylcv", "whitefly", "bemisia"]
+
+  - id: ucipm-tomato-whiteflies
+    url: https://ipm.ucanr.edu/agriculture/tomato/whiteflies/
+    publisher: UC Statewide IPM Program, University of California Agriculture and Natural Resources
+    source_type: university_extension
+    classes: ["Tomato__Yellow Leaf Curl Virus"]
+    keywords: ["whitefly", "bemisia", "tomato yellow leaf curl virus vector"]
+
+  # ---- Template (copy, fill in, remove the leading '#') -------------------
+  # - id: your-short-id
+  #   url: https://example.edu/the-real-page
+  #   publisher: Name of the university or agency
+  #   source_type: university_extension
+  #   classes: ["Exact__Class Name From class_mapping.json"]
+  #   keywords: ["disease name", "pathogen name"]
+  #
+  # - id: your-pdf-converted-to-text
+  #   url: https://example.edu/the-original-paper.pdf
+  #   publisher: Journal or institution
+  #   source_type: peer_reviewed
+  #   classes: ["Exact__Class Name From class_mapping.json"]
+  #   local_file: data/evidence/local/your-file.txt
