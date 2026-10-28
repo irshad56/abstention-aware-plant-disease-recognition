@@ -44,8 +44,50 @@ class ModelRegistry:
             num_classes=num_classes, class_names=class_names, device=device
         )
 
+    def _ensure_artifacts_available(self):
+        """Attempts to download model archive if models are missing and a download URL is configured."""
+        root = Path(self.config.model_root)
+        sample_path = root / "artifacts/models/01_ConvNeXt_Tiny/checkpoint.pt"
+        if sample_path.exists():
+            return
+
+        download_url = os.getenv(
+            "MODEL_DOWNLOAD_URL",
+            "https://github.com/irshad56/abstention-aware-plant-disease-recognition/releases/download/v1.0.0/finalized_plant_disease_models.zip"
+        )
+        if not download_url:
+            return
+
+        logger.info(f"Model checkpoints missing. Attempting automated retrieval from: {download_url}")
+        try:
+            import urllib.request
+            import zipfile
+
+            archive_target = root / "artifacts/models_downloaded.zip"
+            archive_target.parent.mkdir(parents=True, exist_ok=True)
+
+            logger.info("Downloading model bundle...")
+            urllib.request.urlretrieve(download_url, archive_target)
+
+            logger.info("Extracting model bundle...")
+            with zipfile.ZipFile(archive_target, "r") as zip_ref:
+                zip_ref.extractall(root / "artifacts/models")
+
+            if archive_target.exists():
+                archive_target.unlink()
+
+            clip_zip = root / "artifacts/models/05_CLIP_ViT_B32_Frozen_MLP/clip_final_artifacts.zip"
+            if clip_zip.exists():
+                clip_out = root / "artifacts/models/clip_vit_b32"
+                with zipfile.ZipFile(clip_zip, "r") as czip:
+                    czip.extractall(clip_out)
+            logger.info("Model checkpoints successfully unpacked.")
+        except Exception as e:
+            logger.warning(f"Automated model download from {download_url} skipped/failed: {e}")
+
     def discover_and_load_all(self) -> Dict[str, Dict[str, Any]]:
         """Scans candidate paths for all 5 models and attempts to load found checkpoints."""
+        self._ensure_artifacts_available()
         status_report = {}
 
         for model_id, adapter in self.adapters.items():
