@@ -1,4 +1,5 @@
 """Streamlit Web Application: Abstention-Aware Plant Disease Recognition System.
+v2.1.0 — 15 November 2026 | GitHub: irshad56/abstention-aware-plant-disease-recognition
 
 Integrates the Authoritative 4-Level Deep Learning Research Pipeline:
   Level 1: Image Quality Assessment (IQA Gate - blur, resolution, brightness)
@@ -9,6 +10,8 @@ Followed by:
   - Calibrated Temperature Scaling
   - Strict Agent Safety Bridge (Evidence retrieval ONLY on ACCEPTED)
   - Groq LLM Agentic Grounding with Verified Q1 Scientific Literature & Extension Bulletins
+
+Production Deployment: https://abstention-aware-plant-disease-recognition.streamlit.app
 """
 
 import io
@@ -19,6 +22,16 @@ from pathlib import Path
 import pandas as pd
 from PIL import Image
 import streamlit as st
+
+# ── Streamlit Cloud Secrets → Environment variables (runs before any import that reads env) ──
+try:
+    if hasattr(st, "secrets") and "groq" in st.secrets:
+        if not os.environ.get("GROQ_API_KEY"):
+            os.environ["GROQ_API_KEY"] = st.secrets["groq"].get("GROQ_API_KEY", "")
+        if not os.environ.get("GROQ_MODEL"):
+            os.environ["GROQ_MODEL"] = st.secrets["groq"].get("GROQ_MODEL", "openai/gpt-oss-120b")
+except Exception:
+    pass
 
 # Add src to sys.path
 SRC_DIR = Path(__file__).resolve().parent / "src"
@@ -202,10 +215,13 @@ def main():
                 help="Upload a clear photograph of an affected or healthy crop leaf.",
             )
 
-            # Sample test selector
+            # Sample test selector — works locally; hidden on Streamlit Cloud
             sample_options = ["None"]
             user_sample = Path(r"C:\Users\irfan\.gemini\antigravity\brain\d7d8dbb3-95e6-4d8b-867c-6116bd4f89fb\.user_uploaded\media_1793204152080_88793097.png")
-            if user_sample.exists():
+            # Also check for a committed sample image in the repo (cloud-compatible path)
+            repo_sample = Path(__file__).parent / "data" / "sample_leaf.jpg"
+            active_sample = user_sample if user_sample.exists() else (repo_sample if repo_sample.exists() else None)
+            if active_sample:
                 sample_options.append("Sample Leaf (Corn Cercospora Leaf Spot)")
 
             selected_sample = st.selectbox("Or choose local sample image:", sample_options)
@@ -213,8 +229,8 @@ def main():
         image_input = None
         if uploaded_file is not None:
             image_input = uploaded_file.getvalue()
-        elif selected_sample != "None" and user_sample.exists():
-            image_input = user_sample.read_bytes()
+        elif selected_sample != "None" and active_sample and active_sample.exists():
+            image_input = active_sample.read_bytes()
 
         if image_input:
             with col_preview:
