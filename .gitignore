@@ -30,9 +30,13 @@ artifacts/models/**/*.safetensors
 *.zip
 *.pth
 *.pt
+# Explicitly allow authoritative release model files (tracked via Git LFS)
+!authoritative_release/**/*.pt
+!authoritative_release/**/*.pth
+!authoritative_release/**/*.joblib
 
-# Streamlit runtime
-.streamlit/
+# Streamlit runtime state (allow .streamlit config folder)
+.streamlit/*.log
 
 # Video & media recordings
 *.mp4

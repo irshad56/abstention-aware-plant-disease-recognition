@@ -41,10 +41,20 @@ class AppConfig:
         # Environment variable overrides
         self.model_root = os.getenv("PLANT_MODEL_ROOT", str(self.project_root))
         self.device = os.getenv("PLANT_DEVICE", self.settings.get("app", {}).get("device", "auto"))
+
+        # Load Groq credentials: env vars take priority, then Streamlit Cloud secrets, then empty
         self.groq_api_key = os.getenv("GROQ_API_KEY", "")
         self.groq_model = os.getenv(
             "GROQ_MODEL", self.settings.get("llm", {}).get("model", "openai/gpt-oss-120b")
         )
+        # Streamlit Cloud secrets fallback (only when running in Streamlit context)
+        if not self.groq_api_key:
+            try:
+                import streamlit as st
+                self.groq_api_key = st.secrets.get("groq", {}).get("GROQ_API_KEY", "")
+                self.groq_model = st.secrets.get("groq", {}).get("GROQ_MODEL", self.groq_model)
+            except Exception:
+                pass
 
         mapping_file = class_mapping_path or self.settings.get("paths", {}).get(
             "class_mapping", "artifacts/metadata/class_mapping.json"
