@@ -22,17 +22,16 @@ outputs/*.log
 *.pem
 *.key
 
-# Model weights & large archives (user supplies locally)
-# Individual local checkpoints placed by user are ignored to prevent accidental git bloat
+# Model weights & large archives (user supplies locally or via GitHub Release v2.0.0)
 artifacts/models/**/*.pth
 artifacts/models/**/*.pt
 artifacts/models/**/*.safetensors
+authoritative_release/**/*.pt
+authoritative_release/**/*.pth
+authoritative_plant_disease_models.zip
 *.zip
 *.pth
 *.pt
-# Explicitly allow authoritative release model files (tracked via Git LFS)
-!authoritative_release/**/*.pt
-!authoritative_release/**/*.pth
 !authoritative_release/**/*.joblib
 
 # Streamlit runtime state (allow .streamlit config folder)

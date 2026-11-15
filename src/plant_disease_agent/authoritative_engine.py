@@ -83,6 +83,23 @@ class AuthoritativeInferenceWrapper:
         if not leaf_in_leaf_dir.exists():
             missing.append(f"leaf_verification/{leaf_file}")
 
+        # If checkpoints are missing, auto-download from official GitHub Release v2.0.0
+        if missing:
+            print(f"[INFO] Missing checkpoints {missing}. Attempting automatic retrieval from GitHub Release...")
+            if self._download_release_artifacts():
+                # Re-sync leaf verifier
+                if not leaf_in_leaf_dir.exists() and leaf_in_ckpt_dir.exists():
+                    import shutil
+                    shutil.copy2(leaf_in_ckpt_dir, leaf_in_leaf_dir)
+                # Re-check missing
+                missing = []
+                for name, ckpt in expected_disease_models:
+                    p = checkpoints_dir / ckpt
+                    if not p.exists():
+                        missing.append(ckpt)
+                if not leaf_in_leaf_dir.exists():
+                    missing.append(f"leaf_verification/{leaf_file}")
+
         if missing:
             self.load_status = {
                 "engine": "NOT_FOUND",
@@ -110,6 +127,35 @@ class AuthoritativeInferenceWrapper:
                 "engine": "LOADED_FAILED",
                 "error": str(e)
             }
+
+    def _download_release_artifacts(self) -> bool:
+        """Downloads and unpacks authoritative research models from GitHub Release v2.0.0."""
+        download_url = os.getenv(
+            "AUTHORITATIVE_MODEL_DOWNLOAD_URL",
+            "https://github.com/irshad56/abstention-aware-plant-disease-recognition/releases/download/v2.0.0/authoritative_plant_disease_models.zip"
+        )
+        print(f"[INFO] Auto-retrieving model bundle from: {download_url}")
+        self.release_dir.mkdir(parents=True, exist_ok=True)
+        archive_target = self.release_dir / "downloaded_models.zip"
+        try:
+            import urllib.request
+            import zipfile
+            req = urllib.request.Request(download_url, headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(req, timeout=300) as resp, open(archive_target, "wb") as out_f:
+                while chunk := resp.read(2 * 1024 * 1024):
+                    out_f.write(chunk)
+            print("[INFO] Model bundle downloaded successfully. Extracting...")
+            with zipfile.ZipFile(archive_target, "r") as zf:
+                zf.extractall(self.release_dir)
+            if archive_target.exists():
+                archive_target.unlink()
+            print("[INFO] Model bundle unpacked successfully.")
+            return True
+        except Exception as e:
+            print(f"[WARN] Automated model retrieval failed: {e}")
+            if archive_target.exists():
+                archive_target.unlink()
+            return False
 
     @property
     def is_ready(self) -> bool:

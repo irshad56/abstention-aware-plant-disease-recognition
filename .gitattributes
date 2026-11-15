@@ -1,3 +1,0 @@
-authoritative_release/**/*.pth filter=lfs diff=lfs merge=lfs -text
-authoritative_release/**/*.joblib filter=lfs diff=lfs merge=lfs -text
-authoritative_release/**/*.pt filter=lfs diff=lfs merge=lfs -text
