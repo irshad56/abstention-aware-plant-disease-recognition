@@ -1,0 +1,44 @@
+{
+  "protocol": "frozen_imagenet_preprocessing_v1",
+  "created_at": "2026-11-14T23:10:53.298117",
+  "status": "VALIDATION_VERIFIED",
+  "resize": {
+    "method": "square",
+    "per_model_input_size": true,
+    "interpolation": "bilinear"
+  },
+  "color_mode": "RGB",
+  "tensor_conversion": "ToTensor",
+  "normalization": {
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "model_input_sizes": {
+    "ConvNeXtV2_Tiny_best.pt": 224,
+    "DINOv2_Small_best.pt": 518,
+    "EfficientNetV2_S_best.pt": 224,
+    "MaxViT_Tiny_best.pt": 224,
+    "Swin_Tiny_best.pt": 224
+  },
+  "validation": {
+    "samples": 12065,
+    "classes": 29,
+    "test_set_used": false,
+    "training_performed": false,
+    "verification_report": "/kaggle/working/plant_disease_completion/reports/preprocessing_validation_verification.json"
+  },
+  "efficientnetv2_s_note": "ImageNet normalization selected. The timm reference normalization produced substantially lower validation accuracy. ImageNet result differs from recorded checkpoint accuracy by approximately one prediction.",
+  "limitations": [
+    "Original training transform source code was unavailable.",
+    "Preprocessing is supported by validation metric reproduction, not direct recovery of original transform definitions.",
+    "No independent test evaluation was performed in this step."
+  ]
+}

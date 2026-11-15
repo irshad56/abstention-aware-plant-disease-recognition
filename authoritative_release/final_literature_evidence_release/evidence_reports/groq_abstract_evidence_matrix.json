@@ -1,0 +1,543 @@
+{
+  "created_at_utc": "2026-11-15T00:31:45.893793+00:00",
+  "model": "openai/gpt-oss-120b",
+  "disease": "Grape Black Rot",
+  "pathogen": "Guignardia bidwellii / Phyllosticta ampelicida",
+  "input_paper_count": 9,
+  "input_sources": [
+    {
+      "source_id": "P1",
+      "title": "BLACK ROT OF GRAPES (REVIEW)",
+      "journal": "Bulletin of KSAU",
+      "year": 2026,
+      "doi": "10.36718/1819-4036-2026-2-15-34",
+      "abstract": "The aim of the study is to systematize existing knowledge about black rot (Guignardia bidwellii) of grapes through a literature review. Objectives: to comprehensively analyze scientific publications on the etiology, symptoms, diagnosis, and control methods (host resistance prevention, agricultural practices, sanitation, microbiome, and fungicides). With the increasing frequency of extreme weather events due to global warming, changes in the distribution and severity of fungal infections are observed. One such disease, causing economic damage to production, is black rot of grapes. Caused by fungal diseases, black rot causes serious damage to plants, attacking leaves, stems, fruits, and the root system. Preventive measures (agrotechnical) to combat black rot include well-ventilated bush formations that prevent crown thickening, timely weeding and gartering, and treatment of the vineyard with biological and chemical fungicides, taking into account the physiological and biochemical indicators of grape resistance to stress. It is necessary to develop and introduce new varieties with resistance to biotic and abiotic stresses, including increased resistance to black rot, and conduct monitoring using unmanned aerial vehicles, artificial intelligence, and advanced software technologies. Controlling black rot during the growing season helps maintain product quality during storage, preventing decay. It is important to study the dynamics of biogenic amine compounds in finished products affected by black rot. A well-designed combination of disease control methods and strategies will effectively protect vineyards from black rot and produce a good-quality harvest, while maintaining the ecological balance of the environment and thereby ensuring the sustainable development of viticulture as a whole.",
+      "citation_count": 0,
+      "publication_type": "JOURNAL_ARTICLE_OR_REVIEW"
+    },
+    {
+      "source_id": "P2",
+      "title": "Black Rot of Grapes (Guignardia bidwellii)—A Comprehensive Overview",
+      "journal": "Horticulturae",
+      "year": 2023,
+      "doi": "10.3390/horticulturae9020130",
+      "abstract": "The aim of this review is to provide readers with an integrated knowledge on black rot of grapes, based on a critical survey of previous and recent studies of scientific importance. The current state of the art and perspectives of science are presented, not only on the genetic determinants of grapevine resistance to black rot, predictive models of black rot epidemics, but also on the potential of metabolomics to explore black rot-grape interactions and shorten plant breeding processes. Numerous complications of disease management and ambiguities in phenotype-classification are highlighted, and by exploring the limitations and inconsistencies of previous studies, insights into key dilemmas and controversial findings are also provided, suggesting future research directions. Much research has been conducted, but biochemical and molecular studies of the true interactions between grapevine and Guignardia bidwellii are still rarity.",
+      "citation_count": 42,
+      "publication_type": "JOURNAL_ARTICLE_OR_REVIEW"
+    },
+    {
+      "source_id": "P3",
+      "title": "Molecular, proteomic and morphological characterization of the ascomycete Guignardia bidwellii, agent of grape black rot: a polyphasic approach to fungal identification",
+      "journal": "Mycologia",
+      "year": 2012,
+      "doi": "10.3852/11-242",
+      "abstract": "Guignardia bidwellii is the etiological agent of grape black rot, a disease affecting Vitis and other Vitaceae that can cause heavy crop losses in vineyards. Its identification is based mainly on morphological characters and the symptoms on plants but, due to their variability, they may be difficult to interpret to reliably distinguish the pathogen to species. To date, despite the economic importance of G. bidwellii, no molecular investigations have been carried out on Vitis isolates and few sequence data are available for cultures derived from ornamental host plants. We analyzed samples of G. bidwellii collected from grapevine cultivars and ornamental plants of various geographic origins by morphological, molecular and proteomic techniques, including ITS1-ITS2 regions and calmodulin gene sequencing, as well as matrix-assisted laser desorption/ionization analysis by time-of-flight mass spectrometry (MALDI-TOF MS). This polyphasic approach allowed assessing the phylogenetic relationships among the different isolates and suggested the existence of two distinct species. The advantages of a polyphasic approach for the identification of G. bidwellii are highlighted.",
+      "citation_count": 34,
+      "publication_type": "JOURNAL_ARTICLE_OR_REVIEW"
+    },
+    {
+      "source_id": "P4",
+      "title": "Factors Influencing the Efficacy of Myclobutanil and Azoxystrobin for Control of Grape Black Rot",
+      "journal": "Plant Disease",
+      "year": 2003,
+      "doi": "10.1094/pdis.2003.87.3.273",
+      "abstract": "We studied several factors influencing the efficacy of the demethylation inhibitor (DMI) fungicide myclobutanil and the strobilurin fungicide azoxystrobin for control of grape black rot, caused by the pathogen Guignardia bidwellii (anamorph Phyllosticta ampelicida). The distribution of sensitivities to myclobutanil among G. bidwellii isolates from an “organic” vineyard (no previous exposure to synthetic fungicides, n = 50) and from a commercial vineyard with a history of DMI applications (n = 60) was determined in vitro. There was little difference between the two populations, and the range of sensitivities was narrow; for the composite population of 110 isolates, the value of the mean effective dose for 50% inhibition (ED50) was 0.04 mg/liter, and the most- and least-sensitive isolates were separated by a factor of 16. When applied from 2 to 6 days after inoculating grape seedlings with a suspension containing either 2 × 104 or 1 × 106 conidia per ml, myclobutanil (60 mg/liter) provided complete control of lesion development. When applied beyond 6 days after inoculation but prior to lesion appearance (9 to 11 days after inoculation, depending on temperature), it provided complete control of pycnidium production in those lesions that developed subsequently. In contrast, when applied 2 to 10 days after inoculation with 2 × 104 conidia per ml, azoxystrobin (128 mg/liter) provided only 78 to 63% control of lesion formation and erratic control of pycnidium formation, although conidium production was reduced by 85 to 68% across this range of treatments. Relatively little control was provided by azoxystrobin treatments following inoculation with 1 × 106 conidia per ml. On leaf disks treated with azoxystrobin at 20 mg/liter prior to inoculation, 8 to 43% of conidia from five G. bidwellii isolates germinated, and 4 to 19% formed appressoria. However, these processes were completely to near-completely inhibited when salicylhydroxamic acid (SHAM), which inhibits an alternative respiration pathway utilized to circumvent the activity of strobilurin fungicides, was added to the inoculum at 100 mg/liter. Thus, alternative respiration apparently allowed the conidia to germinate and form appressoria on azoxystrobin-treated leaves. When grape seedlings were sprayed with commercially formulated azoxystrobin at 200 mg/liter and inoculated the next day with G. bidwellii conidia, little or no disease was evident 4 weeks later. However, G. bidwellii pycnidia formed on up to 50% of the leaves from such plants when they were killed with paraquat 1 to 7 days after inoculation. These results suggest that latent infections became established on azoxystrobin-treated leaves and became active after the plants were killed with paraquat.",
+      "citation_count": 31,
+      "publication_type": "JOURNAL_ARTICLE_OR_REVIEW"
+    },
+    {
+      "source_id": "P5",
+      "title": "Phytotoxic dioxolanones are potential virulence factors in the infection process of Guignardia bidwellii",
+      "journal": "Scientific Reports",
+      "year": 2017,
+      "doi": "10.1038/s41598-017-09157-6",
+      "abstract": "Phytotoxic dioxolanones from Guignardia bidwellii can be described as potential virulence factors which cause the formation of lesions upon an infection by G. bidwellii. The toxin guignardic acid was found in planta of G. bidwellii-infected Vitis vinifera leaves, whereas no phytotoxic dioxolanones were detected in uninfected leaf material. Secondary metabolism analyses of further phytopathogenic fungi from the genus Guignardia led to the observation that all species investigated can produce the phytotoxins known from G. bidwellii. In addition to these studies, it was demonstrated that phenguignardic acid is biosynthetically derived from two molecules of phenylalanine and that phenylalanine is a key precursor in the biosynthesis of the two other phytotoxins - alaguignardic acid and guignardic acid.",
+      "citation_count": 17,
+      "publication_type": "JOURNAL_ARTICLE_OR_REVIEW"
+    },
+    {
+      "source_id": "P6",
+      "title": "Epidemiology and Control of Grape Black Rot in Southern Switzerland",
+      "journal": "Plant Disease",
+      "year": 1996,
+      "doi": "10.1094/pd-80-0322",
+      "abstract": "Guignardia bidwellii, the causal agent of black rot of grape, appeared in 1988 in a restricted area in Switzerland. Ascospores discharged mainly at the beginning of and during flowering in correspondence with initiation of rain. Leaf infections had little correlation with disease on bunches. Secondary infections seemed to play no major role in disease on bunches. Loads of primary inoculum must be consistent to cause problems. We suggest that in the vine growing systems used traditionally (hand pruning), black rot disease can be avoided by sanitation measures.",
+      "citation_count": 30,
+      "publication_type": "JOURNAL_ARTICLE_OR_REVIEW"
+    },
+    {
+      "source_id": "P7",
+      "title": "Germination ofPhyllosticta ampelicidaPycnidiospores: Prerequisite of Adhesion to the Substratum and the Relationship of Substratum Wettability",
+      "journal": "Fungal Genetics and Biology",
+      "year": 1996,
+      "doi": "10.1006/fgbi.1996.0005",
+      "abstract": "Pycnidiospores of Phyllosticta ampelicida, the causal agent of black rot of grape, were found to germinate only on substrata on which they were firmly attached. Such surfaces were poorly wettable and had advancing contact angles (straight thetaa) formed by a water drop of >80°, e.g., grape leaf, polystyrene, Teflon, polycarbonate, collodion, and glass treated with the silanes n-octadecyltrichlorosilane, dimethyldichlorosilane, or diphenyldichlorosilane. When pycnidiospores were deposited on more wettable surfaces they did not attach firmly and did not germinate. Such highly wettable surfaces had straight thetaa </= 40° and were represented by heat-treated glass, cellophane, nutrient- and water-agars, polystyrene treated with UV-irradiation or sulfuric acid, and glass silanized with n-2-aminoethyl-3-aminopropyltrimethoxysilane, n-(trimethoxysilylpropyl)ethylenediamine triacetic acid trisodium, or 3-aminopropyltriethoxysilane. Adhesion of pycnidiospores was assessed with and without a hydraulic shearing force. Pycnidiospore adhesion occurred over several minutes in distilled deionized water, unless it was first acidified, which decreased attachment time to <0.03 s. Attachment of pycnidiospores treated with sodium azide, formaldehyde, or boiled in water for 10 min was similar to nontreated conidia. Possible mechanisms of adhesion of the conidia to surfaces include hydrophobic and ionic interactions.",
+      "citation_count": 96,
+      "publication_type": "JOURNAL_ARTICLE_OR_REVIEW"
+    },
+    {
+      "source_id": "P8",
+      "title": "Draft genome sequence of Phyllosticta ampelicida, the cause of grapevine black rot",
+      "journal": "Phytopathologia Mediterranea",
+      "year": 2022,
+      "doi": "10.36253/phyto-13516",
+      "abstract": "Phyllosticta ampelicida causes grapevine black rot, a potentially damaging disease for grape production. This paper reports the draft genome sequence of P. ampelicida PA1 Galicia CBS 148563, which is 30.55 Mb and encodes 10,691 predicted protein-coding genes. This is the first sequence genome assembly of P. ampelicida, and this information is a valuable resource to support genomic attributes for determining pathogenic behaviour and comparative genomic analyses of grapevine black rot fungi.",
+      "citation_count": 5,
+      "publication_type": "JOURNAL_ARTICLE_OR_REVIEW"
+    },
+    {
+      "source_id": "P9",
+      "title": "GRAPE BLACK ROT (GUIGNARDIA BIDWELLII), AN INCREASED THREAT IN OSTROV - OLTINA VINE GROWING AREA",
+      "journal": "Romanian Journal for Plant Protection",
+      "year": 2024,
+      "doi": "10.54574/rjpp.17.09",
+      "abstract": "\" Grapes growing is an ancient tradition throughout Romania. This process presents significant challenges due to plant pathogens, requiring specialization and informed skill from local viticulturists. Increasing climate change is raising new challenges for plant protection in vineyards so that black rot of grapes has begun to develop yearly more and more incidence. This paper highlights the importance and the special role of an effective disease control in vineyards in the southern area of Dobrogea in order to obtain a quantitatively and qualitatively increased yield. An eleven years study on black rot development in two grape varieties (Italia and Muscat Ottonel) signaled an increasing incidence of this disease. Contact and systemic fungicide treatment schemes were applied at two local farmers in 2024 in the area. The results of efficacy trials, based on the assessment of both foliage and bunches, showed a final range of 65 to 76.7%. In control plots (untreated), grape yield decreased significantly by 71-73% and was of low quality. Consequently, the development of innovative and more effective control strategies will be essential for future pathogen management.\"",
+      "citation_count": 0,
+      "publication_type": "JOURNAL_ARTICLE_OR_REVIEW"
+    }
+  ],
+  "evidence_report": {
+    "disease": "Grape Black Rot",
+    "pathogen": "Guignardia bidwellii / Phyllosticta ampelicida",
+    "scope": "Abstract-level evidence review",
+    "overall_assessment": "The supplied abstracts collectively provide direct evidence on the symptoms, epidemiology, environmental drivers, pathogen biology, host resistance concepts, and management strategies for grape black rot. Evidence derives from both review articles and primary research studies, but most findings are limited to the information explicitly stated in abstracts; quantitative efficacy data are available only for a few fungicide trials.",
+    "paper_assessments": [
+      {
+        "source_id": "P1",
+        "title": "BLACK ROT OF GRAPES (REVIEW)",
+        "doi": "10.36718/1819-4036-2026-2-15-34",
+        "paper_type": "REVIEW",
+        "main_research_focus": "Literature synthesis of black rot etiology, symptoms, diagnosis, and control methods.",
+        "supported_topics": [
+          {
+            "topic": "disease_symptoms",
+            "evidence_status": "DIRECTLY_SUPPORTED",
+            "abstract_based_finding": "Black rot attacks leaves, stems, fruits, and the root system.",
+            "limitations": "Based on review synthesis; no primary data presented."
+          },
+          {
+            "topic": "management_and_control",
+            "evidence_status": "PARTIALLY_SUPPORTED",
+            "abstract_based_finding": "Preventive measures include well‑ventilated bush formations, timely weeding, gartering, and treatment with biological and chemical fungicides; breeding for resistance and UAV‑based monitoring are suggested.",
+            "limitations": "Recommendations are descriptive; efficacy not quantified in the abstract."
+          },
+          {
+            "topic": "host_resistance",
+            "evidence_status": "PARTIALLY_SUPPORTED",
+            "abstract_based_finding": "Development and introduction of new varieties with resistance to biotic and abiotic stresses, including black rot, is emphasized.",
+            "limitations": "No experimental evidence of resistance levels is provided."
+          }
+        ],
+        "topics_not_established_by_abstract": [],
+        "abstract_limitations": [
+          "Being a review, the abstract does not present new experimental data.",
+          "Efficacy of suggested control measures is not quantified."
+        ]
+      },
+      {
+        "source_id": "P2",
+        "title": "Black Rot of Grapes (Guignardia bidwellii)—A Comprehensive Overview",
+        "doi": "10.3390/horticulturae9020130",
+        "paper_type": "REVIEW",
+        "main_research_focus": "Critical survey of recent studies on black rot, focusing on genetics of resistance, predictive epidemiological models, and metabolomics.",
+        "supported_topics": [
+          {
+            "topic": "host_resistance",
+            "evidence_status": "DIRECTLY_SUPPORTED",
+            "abstract_based_finding": "The review discusses genetic determinants of grapevine resistance to black rot.",
+            "limitations": "No primary data; synthesis only."
+          },
+          {
+            "topic": "epidemiology_and_infection",
+            "evidence_status": "DIRECTLY_SUPPORTED",
+            "abstract_based_finding": "Predictive models of black rot epidemics are highlighted.",
+            "limitations": "Models are mentioned but not detailed in the abstract."
+          },
+          {
+            "topic": "pathogen_biology",
+            "evidence_status": "PARTIALLY_SUPPORTED",
+            "abstract_based_finding": "Metabolomics potential to explore black rot–grape interactions is noted.",
+            "limitations": "No specific metabolic pathways or results are described."
+          }
+        ],
+        "topics_not_established_by_abstract": [],
+        "abstract_limitations": [
+          "Abstract summarizes literature; no new experimental results are reported."
+        ]
+      },
+      {
+        "source_id": "P3",
+        "title": "Molecular, proteomic and morphological characterization of the ascomycete Guignardia bidwellii, agent of grape black rot: a polyphasic approach to fungal identification",
+        "doi": "10.3852/11-242",
+        "paper_type": "PRIMARY_RESEARCH",
+        "main_research_focus": "Polyphasic identification of G. bidwellii isolates using morphology, DNA sequencing, and MALDI‑TOF proteomics.",
+        "supported_topics": [
+          {
+            "topic": "pathogen_biology",
+            "evidence_status": "DIRECTLY_SUPPORTED",
+            "abstract_based_finding": "Morphological, ITS1‑ITS2, calmodulin gene sequencing, and MALDI‑TOF MS reveal phylogenetic relationships and suggest two distinct species within isolates.",
+            "limitations": "Focuses on identification; does not address disease epidemiology or control."
+          }
+        ],
+        "topics_not_established_by_abstract": [],
+        "abstract_limitations": [
+          "No information on symptom expression, field epidemiology, or management."
+        ]
+      },
+      {
+        "source_id": "P4",
+        "title": "Factors Influencing the Efficacy of Myclobutanil and Azoxystrobin for Control of Grape Black Rot",
+        "doi": "10.1094/pdis.2003.87.3.273",
+        "paper_type": "PRIMARY_RESEARCH",
+        "main_research_focus": "In‑vitro sensitivity of G. bidwellii isolates and greenhouse efficacy of two fungicides applied at different times post‑inoculation.",
+        "supported_topics": [
+          {
+            "topic": "management_and_control",
+            "evidence_status": "DIRECTLY_SUPPORTED",
+            "abstract_based_finding": "Myclobutanil (60 mg L⁻¹) applied 2–6 days after inoculation gave complete control of lesion development; azoxystrobin (128 mg L⁻¹) gave 63–78 % lesion control and erratic pycnidium control.",
+            "limitations": "Results are from controlled seedling experiments; field relevance not addressed."
+          },
+          {
+            "topic": "pathogen_biology",
+            "evidence_status": "DIRECTLY_SUPPORTED",
+            "abstract_based_finding": "Sensitivity distribution among 110 isolates showed a narrow range (mean ED₅₀ = 0.04 mg L⁻¹).",
+            "limitations": "Only in‑vitro sensitivity; does not cover field population dynamics."
+          },
+          {
+            "topic": "environmental_conditions",
+            "evidence_status": "PARTIALLY_SUPPORTED",
+            "abstract_based_finding": "Efficacy of azoxystrobin declined when applied later, suggesting temperature‑dependent infection windows.",
+            "limitations": "Temperature effect inferred from timing; not quantified."
+          }
+        ],
+        "topics_not_established_by_abstract": [],
+        "abstract_limitations": [
+          "Experiments conducted on grape seedlings and leaf disks; not full‑vine field trials."
+        ]
+      },
+      {
+        "source_id": "P5",
+        "title": "Phytotoxic dioxolanones are potential virulence factors in the infection process of Guignardia bidwellii",
+        "doi": "10.1038/s41598-017-09157-6",
+        "paper_type": "PRIMARY_RESEARCH",
+        "main_research_focus": "Identification of phytotoxic dioxolanones produced by G. bidwellii and their role as virulence factors.",
+        "supported_topics": [
+          {
+            "topic": "pathogen_biology",
+            "evidence_status": "DIRECTLY_SUPPORTED",
+            "abstract_based_finding": "Guignardic acid and related dioxolanones were detected in infected Vitis vinifera leaves and are implicated as virulence factors causing lesion formation.",
+            "limitations": "Mechanistic details beyond toxin detection are not provided."
+          },
+          {
+            "topic": "disease_symptoms",
+            "evidence_status": "PARTIALLY_SUPPORTED",
+            "abstract_based_finding": "The toxins cause formation of lesions upon infection.",
+            "limitations": "Lesion description limited to presence/absence; severity not quantified."
+          }
+        ],
+        "topics_not_established_by_abstract": [],
+        "abstract_limitations": [
+          "Focuses on secondary metabolites; does not address epidemiology or control measures."
+        ]
+      },
+      {
+        "source_id": "P6",
+        "title": "Epidemiology and Control of Grape Black Rot in Southern Switzerland",
+        "doi": "10.1094/pd-80-0322",
+        "paper_type": "PRIMARY_RESEARCH",
+        "main_research_focus": "Field observations of inoculum timing, infection patterns, and sanitation recommendations in Swiss vineyards.",
+        "supported_topics": [
+          {
+            "topic": "epidemiology_and_infection",
+            "evidence_status": "DIRECTLY_SUPPORTED",
+            "abstract_based_finding": "Ascospores are discharged mainly at the beginning of and during flowering in correspondence with rain; primary inoculum load must be consistent to cause problems; secondary infections play little role on bunches.",
+            "limitations": "Observations limited to a specific region and time period."
+          },
+          {
+            "topic": "environmental_conditions",
+            "evidence_status": "DIRECTLY_SUPPORTED",
+            "abstract_based_finding": "Rain during flowering coincides with ascospore discharge.",
+            "limitations": "No quantitative climate data provided."
+          },
+          {
+            "topic": "management_and_control",
+            "evidence_status": "DIRECTLY_SUPPORTED",
+            "abstract_based_finding": "Sanitation measures (e.g., hand pruning) in traditional vine‑growing systems can avoid black rot.",
+            "limitations": "Effectiveness inferred from observation; no controlled trial reported."
+          }
+        ],
+        "topics_not_established_by_abstract": [],
+        "abstract_limitations": [
+          "Study focuses on a single geographic area; broader applicability not demonstrated."
+        ]
+      },
+      {
+        "source_id": "P7",
+        "title": "Germination of Phyllosticta ampelicida Pycnidiospores: Prerequisite of Adhesion to the Substratum and the Relationship of Substratum Wettability",
+        "doi": "10.1006/fgbi.1996.0005",
+        "paper_type": "PRIMARY_RESEARCH",
+        "main_research_focus": "Investigation of pycnidiospore adhesion and germination relative to surface wettability.",
+        "supported_topics": [
+          {
+            "topic": "pathogen_biology",
+            "evidence_status": "DIRECTLY_SUPPORTED",
+            "abstract_based_finding": "Pycnidiospores germinate only on poorly wettable surfaces (contact angle >80°) where they adhere firmly; highly wettable surfaces inhibit germination.",
+            "limitations": "Laboratory conditions; does not directly link to field infection rates."
+          },
+          {
+            "topic": "environmental_conditions",
+            "evidence_status": "PARTIALLY_SUPPORTED",
+            "abstract_based_finding": "Surface wettability influences spore adhesion and germination.",
+            "limitations": "Surface chemistry rather than climatic factors."
+          }
+        ],
+        "topics_not_established_by_abstract": [],
+        "abstract_limitations": [
+          "Study does not address disease development on vines or control strategies."
+        ]
+      },
+      {
+        "source_id": "P8",
+        "title": "Draft genome sequence of Phyllosticta ampelicida, the cause of grapevine black rot",
+        "doi": "10.36253/phyto-13516",
+        "paper_type": "PRIMARY_RESEARCH",
+        "main_research_focus": "Presentation of the first draft genome assembly for P. ampelicida.",
+        "supported_topics": [
+          {
+            "topic": "pathogen_biology",
+            "evidence_status": "DIRECTLY_SUPPORTED",
+            "abstract_based_finding": "The genome (30.55 Mb, 10,691 predicted genes) provides a resource for studying pathogenic behavior and comparative genomics.",
+            "limitations": "No functional analyses or disease‑related findings are detailed in the abstract."
+          }
+        ],
+        "topics_not_established_by_abstract": [],
+        "abstract_limitations": [
+          "Genome data alone do not convey epidemiological or management information."
+        ]
+      },
+      {
+        "source_id": "P9",
+        "title": "GRAPE BLACK ROT (GUIGNARDIA BIDWELLII), AN INCREASED THREAT IN OSTROV - OLTINA VINE GROWING AREA",
+        "doi": "10.54574/rjpp.17.09",
+        "paper_type": "PRIMARY_RESEARCH",
+        "main_research_focus": "Eleven‑year field monitoring of black rot incidence in two grape varieties and evaluation of fungicide treatment schemes in 2024.",
+        "supported_topics": [
+          {
+            "topic": "epidemiology_and_infection",
+            "evidence_status": "DIRECTLY_SUPPORTED",
+            "abstract_based_finding": "An increasing incidence of black rot was observed over eleven years in the studied area.",
+            "limitations": "Incidence trends are reported without statistical detail."
+          },
+          {
+            "topic": "environmental_conditions",
+            "evidence_status": "PARTIALLY_SUPPORTED",
+            "abstract_based_finding": "Climate change is mentioned as a factor raising new challenges for disease development.",
+            "limitations": "No specific climatic variables quantified."
+          },
+          {
+            "topic": "management_and_control",
+            "evidence_status": "DIRECTLY_SUPPORTED",
+            "abstract_based_finding": "Contact and systemic fungicide schemes applied in 2024 gave 65–76.7 % efficacy; untreated plots showed 71–73 % yield loss and low quality.",
+            "limitations": "Efficacy reported as a range; details of fungicide products, timing, and application rates are not provided."
+          }
+        ],
+        "topics_not_established_by_abstract": [],
+        "abstract_limitations": [
+          "Results are specific to two varieties and a single region; broader extrapolation is uncertain."
+        ]
+      }
+    ],
+    "evidence_synthesis": {
+      "disease_symptoms": {
+        "status": "DIRECTLY_SUPPORTED",
+        "summary": "Black rot caused by G. bidwellii attacks leaves, stems, fruits, and roots (P1) and produces lesions on infected leaves via phytotoxic dioxolanones (P5). Field observations link disease to severe yield loss when uncontrolled (P9).",
+        "citations": [
+          {
+            "source_id": "P1",
+            "doi": "10.36718/1819-4036-2026-2-15-34"
+          },
+          {
+            "source_id": "P5",
+            "doi": "10.1038/s41598-017-09157-6"
+          },
+          {
+            "source_id": "P9",
+            "doi": "10.54574/rjpp.17.09"
+          }
+        ]
+      },
+      "epidemiology_and_infection": {
+        "status": "DIRECTLY_SUPPORTED",
+        "summary": "Primary inoculum is released during flowering with rain (P6); consistent primary inoculum load is required for disease problems. Predictive epidemic models are discussed (P2). Long‑term monitoring shows rising incidence in southern Dobrogea (P9).",
+        "citations": [
+          {
+            "source_id": "P6",
+            "doi": "10.1094/pd-80-0322"
+          },
+          {
+            "source_id": "P2",
+            "doi": "10.3390/horticulturae9020130"
+          },
+          {
+            "source_id": "P9",
+            "doi": "10.54574/rjpp.17.09"
+          }
+        ]
+      },
+      "environmental_conditions": {
+        "status": "DIRECTLY_SUPPORTED",
+        "summary": "Rain during flowering triggers ascospore discharge (P6). Climate change is cited as increasing disease pressure (P9). Fungicide efficacy is time‑sensitive, implying temperature‑dependent infection windows (P4).",
+        "citations": [
+          {
+            "source_id": "P6",
+            "doi": "10.1094/pd-80-0322"
+          },
+          {
+            "source_id": "P9",
+            "doi": "10.54574/rjpp.17.09"
+          },
+          {
+            "source_id": "P4",
+            "doi": "10.1094/pdis.2003.87.3.273"
+          }
+        ]
+      },
+      "pathogen_biology": {
+        "status": "DIRECTLY_SUPPORTED",
+        "summary": "Morphological, molecular, and proteomic analyses reveal phylogenetic diversity and suggest two species within isolates (P3). Genome sequence provides a genomic framework (P8). Virulence is linked to phytotoxic dioxolanones (P5). Spore adhesion and germination depend on surface wettability (P7). Sensitivity to fungicides varies narrowly among isolates (P4).",
+        "citations": [
+          {
+            "source_id": "P3",
+            "doi": "10.3852/11-242"
+          },
+          {
+            "source_id": "P8",
+            "doi": "10.36253/phyto-13516"
+          },
+          {
+            "source_id": "P5",
+            "doi": "10.1038/s41598-017-09157-6"
+          },
+          {
+            "source_id": "P7",
+            "doi": "10.1006/fgbi.1996.0005"
+          },
+          {
+            "source_id": "P4",
+            "doi": "10.1094/pdis.2003.87.3.273"
+          }
+        ]
+      },
+      "host_resistance": {
+        "status": "DIRECTLY_SUPPORTED",
+        "summary": "Genetic determinants of grapevine resistance are reviewed (P2). Breeding for resistant varieties is advocated (P1).",
+        "citations": [
+          {
+            "source_id": "P2",
+            "doi": "10.3390/horticulturae9020130"
+          },
+          {
+            "source_id": "P1",
+            "doi": "10.36718/1819-4036-2026-2-15-34"
+          }
+        ]
+      },
+      "management_and_control": {
+        "status": "DIRECTLY_SUPPORTED",
+        "summary": "Sanitation (hand pruning) can prevent disease (P6). Myclobutanil provides complete lesion control when applied 2–6 days after inoculation; azoxystrobin offers partial, variable control (P4). Field fungicide programs achieved 65–76.7 % efficacy, while untreated vines suffered >70 % yield loss (P9). Reviews recommend integrated strategies including agrotechnical measures, biological and chemical fungicides, and resistant cultivars (P1).",
+        "citations": [
+          {
+            "source_id": "P6",
+            "doi": "10.1094/pd-80-0322"
+          },
+          {
+            "source_id": "P4",
+            "doi": "10.1094/pdis.2003.87.3.273"
+          },
+          {
+            "source_id": "P9",
+            "doi": "10.54574/rjpp.17.09"
+          },
+          {
+            "source_id": "P1",
+            "doi": "10.36718/1819-4036-2026-2-15-34"
+          }
+        ]
+      }
+    },
+    "management_evidence": [
+      {
+        "intervention": "Myclobutanil (60 mg L⁻¹) applied 2–6 days after inoculation",
+        "finding": "Provided complete control of lesion development on grape seedlings.",
+        "evidence_status": "DIRECTLY_SUPPORTED",
+        "study_context": "Greenhouse seedling assay with inoculum levels of 2 × 10⁴ or 1 × 10⁶ conidia mL⁻¹ (P4).",
+        "citations": [
+          {
+            "source_id": "P4",
+            "doi": "10.1094/pdis.2003.87.3.273"
+          }
+        ]
+      },
+      {
+        "intervention": "Azoxystrobin (128 mg L⁻¹) applied 2–10 days after inoculation",
+        "finding": "Yielded 63–78 % control of lesion formation and erratic control of pycnidia; reduced conidium production by 68–85 %.",
+        "evidence_status": "DIRECTLY_SUPPORTED",
+        "study_context": "Same greenhouse seedling assay as above (P4).",
+        "citations": [
+          {
+            "source_id": "P4",
+            "doi": "10.1094/pdis.2003.87.3.273"
+          }
+        ]
+      },
+      {
+        "intervention": "Sanitation measures (hand pruning, removal of infected material)",
+        "finding": "Can avoid black rot in traditional hand‑pruned vineyards.",
+        "evidence_status": "DIRECTLY_SUPPORTED",
+        "study_context": "Observational field study in southern Switzerland (P6).",
+        "citations": [
+          {
+            "source_id": "P6",
+            "doi": "10.1094/pd-80-0322"
+          }
+        ]
+      },
+      {
+        "intervention": "Contact and systemic fungicide treatment schemes (2024 field trial)",
+        "finding": "Achieved 65–76.7 % efficacy; untreated plots suffered 71–73 % yield loss and low fruit quality.",
+        "evidence_status": "DIRECTLY_SUPPORTED",
+        "study_context": "Eleven‑year monitoring with 2024 fungicide applications on two grape varieties in Dobrogea, Romania (P9).",
+        "citations": [
+          {
+            "source_id": "P9",
+            "doi": "10.54574/rjpp.17.09"
+          }
+        ]
+      }
+    ],
+    "important_evidence_gaps": [
+      "Lack of multi‑year, region‑wide field trials comparing integrated management packages (cultural + chemical + biological) under varying climatic conditions.",
+      "Quantitative data on the durability and field performance of resistant grape cultivars against G. bidwellii.",
+      "Detailed climate‑disease modeling linking specific temperature and humidity thresholds to infection risk; existing abstracts mention rain and climate change but provide no metrics.",
+      "Efficacy of non‑chemical control options (e.g., biological antagonists, canopy management) is only described qualitatively (P1) without experimental validation.",
+      "Long‑term monitoring of fungicide resistance evolution in G. bidwellii populations beyond the limited in‑vitro sensitivity assessment (P4)."
+    ],
+    "claims_that_should_not_be_made": [
+      "Universal dosage recommendations for myclobutanil or azoxystrobin across all vineyards.",
+      "That the described fungicide regimes guarantee complete disease control in all environments.",
+      "That climate change will uniformly increase black rot severity worldwide without region‑specific data.",
+      "That the reviewed resistant varieties are immune to black rot in field conditions."
+    ],
+    "journal_quartile_status": "NOT_VERIFIED",
+    "citation_integrity_audit": {
+      "known_source_count": 9,
+      "citation_references_checked": 33,
+      "citation_identity_errors": [],
+      "citation_identity_check_passed": true,
+      "scientific_claims_manually_verified": false
+    }
+  },
+  "q1_verified": false,
+  "full_text_review_performed": false,
+  "human_scientific_review_performed": false
+}

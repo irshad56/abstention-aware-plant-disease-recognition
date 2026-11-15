@@ -1,0 +1,43 @@
+{
+  "project": "Abstention-Aware Plant Disease Recognition",
+  "level": 2,
+  "component": "Leaf Verification",
+  "architecture": "resnet18",
+  "checkpoint": "leaf_verifier_resnet18_domain_adapted.pth",
+  "input_size": [
+    224,
+    224
+  ],
+  "input_channels": 3,
+  "output_type": "single_logit",
+  "activation": "sigmoid",
+  "threshold": 0.25017503751875936,
+  "decision_rule": "probability_leaf >= threshold",
+  "labels": {
+    "0": "non_leaf",
+    "1": "leaf"
+  },
+  "normalization": {
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "preprocessing": [
+    "RGB conversion",
+    "Resize to 224x224",
+    "ToTensor",
+    "ImageNet normalization"
+  ],
+  "device": "cuda",
+  "validation_threshold_selection": "Validation-only macro source accuracy",
+  "independent_test_used_for_threshold_selection": false,
+  "training_performed_during_release": false,
+  "threshold_tuning_during_release": false
+}

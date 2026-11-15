@@ -1,0 +1,19 @@
+{
+  "name": "five_model_probability_log_probability_v1",
+  "model_count": 5,
+  "classes_per_model": 29,
+  "features_per_model": 58,
+  "feature_order_per_model": [
+    "probabilities_0_to_28",
+    "log_probabilities_0_to_28"
+  ],
+  "total_features": 290,
+  "probability_clipping_epsilon": 1e-12,
+  "model_order": [
+    "ConvNeXtV2_Tiny",
+    "DINOv2_Small",
+    "EfficientNetV2_S",
+    "MaxViT_Tiny",
+    "Swin_Tiny"
+  ]
+}

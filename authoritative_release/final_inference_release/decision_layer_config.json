@@ -1,0 +1,71 @@
+{
+  "version": "1.0",
+  "feature_schema": {
+    "name": "five_model_probability_log_probability_v1",
+    "model_count": 5,
+    "classes_per_model": 29,
+    "features_per_model": 58,
+    "feature_order_per_model": [
+      "probabilities_0_to_28",
+      "log_probabilities_0_to_28"
+    ],
+    "total_features": 290,
+    "probability_clipping_epsilon": 1e-12,
+    "model_order": [
+      "ConvNeXtV2_Tiny",
+      "DINOv2_Small",
+      "EfficientNetV2_S",
+      "MaxViT_Tiny",
+      "Swin_Tiny"
+    ]
+  },
+  "feature_schema_file": "feature_schema.json",
+  "taxonomy_gate_file": "probability_taxonomy_gate.joblib",
+  "disease_adapter_file": "probability_disease_adapter.joblib",
+  "taxonomy_gate_model": "LogisticRegression",
+  "disease_adapter_model": "LogisticRegression",
+  "taxonomy_gate_threshold": 0.2772409953029085,
+  "disease_confidence_threshold": 0.7333864304128414,
+  "temperature": 1.3954610144042385,
+  "adapter_classes": [
+    "Apple___Apple Scab",
+    "Apple___Cedar Apple Rust",
+    "Bell Pepper___Bacterial Spot",
+    "Corn (Maize)___Cercospora Leaf Spot",
+    "Corn (Maize)___Common Rust",
+    "Grape___Black Rot",
+    "Potato___Early Blight",
+    "Potato___Late Blight",
+    "Tomato___Bacterial Spot",
+    "Tomato___Early Blight",
+    "Tomato___Late Blight",
+    "Tomato___Septoria Leaf Spot",
+    "Tomato___Yellow Leaf Curl Virus"
+  ],
+  "adapter_output_indices": {
+    "Apple___Apple Scab": 0,
+    "Apple___Cedar Apple Rust": 1,
+    "Bell Pepper___Bacterial Spot": 2,
+    "Corn (Maize)___Cercospora Leaf Spot": 3,
+    "Corn (Maize)___Common Rust": 4,
+    "Grape___Black Rot": 5,
+    "Potato___Early Blight": 6,
+    "Potato___Late Blight": 7,
+    "Tomato___Bacterial Spot": 8,
+    "Tomato___Early Blight": 9,
+    "Tomato___Late Blight": 10,
+    "Tomato___Septoria Leaf Spot": 11,
+    "Tomato___Yellow Leaf Curl Virus": 12
+  },
+  "abstention_policy": {
+    "taxonomy_gate_below_threshold": "ABSTAIN",
+    "disease_confidence_below_threshold": "ABSTAIN",
+    "disease_specific_evidence_only_after_both_gates": true
+  },
+  "training_partition": "group_disjoint_train",
+  "model_selection_partition": "group_disjoint_validation",
+  "calibration_partition": "group_disjoint_calibration",
+  "fixed_test_used_for_selection_or_calibration": false,
+  "original_vision_checkpoints_modified": false,
+  "old_adapter_reused": false
+}

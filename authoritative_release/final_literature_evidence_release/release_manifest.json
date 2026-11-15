@@ -1,0 +1,90 @@
+{
+  "release_name": "FINAL_LITERATURE_EVIDENCE_RELEASE",
+  "created_at_utc": "2026-11-15T00:34:36.285247+00:00",
+  "disease_case_study": "Grape Black Rot",
+  "source_records": 9,
+  "quote_assessments": {
+    "direct": 8,
+    "partial": 3,
+    "irrelevant": 1
+  },
+  "environmental_conditions_established": false,
+  "full_text_review_completed": false,
+  "q1_verified": false,
+  "production_modified": false,
+  "fixed_test_accessed": false,
+  "files": {
+    "ANTIGRAVITY_INTEGRATION_PROMPT.md": {
+      "size_bytes": 8393,
+      "sha256": "4dda65fb282da2587e29bb2b442569f399e2acad25fc6a1d92eadb08916d168c"
+    },
+    "README.md": {
+      "size_bytes": 1065,
+      "sha256": "d008548d8c9ea376f832fa4bf95928034906ca6a85c708ffd1770ab67d9a806b"
+    },
+    "evidence_reports/block7_evidence_consistency_audit.json": {
+      "size_bytes": 4465,
+      "sha256": "c643bd07b8081678c6448302a125cd882e1b83299c99cb3a7cb9a2286c054d82"
+    },
+    "evidence_reports/block7_topic_consistency.csv": {
+      "size_bytes": 2621,
+      "sha256": "aacb5ce9d54b21cd839f4978ae5dd6a993c0b557e8fae7468351e1800337a1c9"
+    },
+    "evidence_reports/block8_quote_verified_evidence.csv": {
+      "size_bytes": 1418,
+      "sha256": "496491046ace75d3e779594e04ace1387984d1268fa295ca7ec0a74307037c7f"
+    },
+    "evidence_reports/block8_quote_verified_evidence.json": {
+      "size_bytes": 11923,
+      "sha256": "db638f80bd39431b433b19a3332e0206919c5c217a3e4d044e6f3c8637b8dc66"
+    },
+    "evidence_reports/block9_final_evidence_report.json": {
+      "size_bytes": 15930,
+      "sha256": "869b7e104a1775d77d9d3f419440b7d908ab907582fe15b95ae68fac0acb64c8"
+    },
+    "evidence_reports/block9_final_evidence_report.md": {
+      "size_bytes": 8629,
+      "sha256": "1ed9cb9e7d0580164ff8a95d36300d669c9802b8bc63d027a8c80b9ccc48223b"
+    },
+    "evidence_reports/evidence_classification_report.json": {
+      "size_bytes": 40569,
+      "sha256": "c627c71d40421a04927a94e9c8c182297d634eeac6e04c231372f3fcea01a16d"
+    },
+    "evidence_reports/evidence_classification_table.csv": {
+      "size_bytes": 4504,
+      "sha256": "3b8055914135480776ad01fe9c83856882053b6db459d8b196280b0e19bd071a"
+    },
+    "evidence_reports/expanded_literature_shortlist.csv": {
+      "size_bytes": 116508,
+      "sha256": "3696e67bd902a9aae425e7f0db342a356b2252c694acab7bd3df02ed2b4394f5"
+    },
+    "evidence_reports/expanded_literature_shortlist.json": {
+      "size_bytes": 670013,
+      "sha256": "b7a2ad46fe122bc703da1a8e5fdce4910ffebe8f10f8e51ea7a7c234de1e47c2"
+    },
+    "evidence_reports/groq_abstract_evidence_matrix.json": {
+      "size_bytes": 36946,
+      "sha256": "2b888202fcf91330062370079d2cf8b817c5cd2fd69a4b8472d80a2d4509dece"
+    },
+    "evidence_reports/groq_grounded_evidence_report.json": {
+      "size_bytes": 17796,
+      "sha256": "3db8c80326eced53c556b95fd822138f554ab4fd21b013d6db7a1ffcc7f80b93"
+    },
+    "evidence_reports/literature_relevance_audit.csv": {
+      "size_bytes": 2470,
+      "sha256": "346f41a4d0a35c4cd3606351eba38dfba3628654e9558f6288dfe2151fe3af65"
+    },
+    "evidence_reports/literature_relevance_audit.json": {
+      "size_bytes": 23763,
+      "sha256": "ac5c34a97395a02e01c4ed290e45d1fd94fddc59f36e65f379dfdd12fe610be6"
+    },
+    "evidence_reports/retrieved_scientific_papers.json": {
+      "size_bytes": 9500,
+      "sha256": "c7b630b0e11c2846ed6ecb6de7b4763c23da0aee4bae59df1298dd7a5cd0fc13"
+    },
+    "evidence_reports/verified_ranked_papers.json": {
+      "size_bytes": 6651,
+      "sha256": "359aea4ed7064ad0c766a8ac3aeb0383423d295ddaf58986134ae2599f7f146c"
+    }
+  }
+}

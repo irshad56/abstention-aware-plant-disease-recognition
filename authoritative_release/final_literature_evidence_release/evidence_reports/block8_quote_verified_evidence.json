@@ -1,0 +1,272 @@
+{
+  "created_at_utc": "2026-11-15T00:32:38.380443+00:00",
+  "model": "openai/gpt-oss-120b",
+  "disease": "Grape Black Rot",
+  "pathogen": "Guignardia bidwellii / Phyllosticta ampelicida",
+  "source_count": 9,
+  "topic_count": 6,
+  "topic_reviews": [
+    {
+      "topic": "disease_symptoms",
+      "groq_claimed_status": "DIRECTLY_SUPPORTED",
+      "final_status_after_quote_check": "DIRECTLY_SUPPORTED",
+      "conclusion": "Black rot caused by Guignardia bidwellii produces lesions and attacks leaves, stems, fruits, and roots.",
+      "valid_exact_quotes": [
+        {
+          "source_id": "P1",
+          "doi": "10.36718/1819-4036-2026-2-15-34",
+          "title": "BLACK ROT OF GRAPES (REVIEW)",
+          "exact_quote": "attacking leaves, stems, fruits, and the root system.",
+          "what_the_quote_supports": "identifies plant parts affected by black rot",
+          "study_type": "review",
+          "programmatic_quote_match": true
+        },
+        {
+          "source_id": "P5",
+          "doi": "10.1038/s41598-017-09157-6",
+          "title": "Phytotoxic dioxolanones are potential virulence factors in the infection process of Guignardia bidwellii",
+          "exact_quote": "cause the formation of lesions upon an infection",
+          "what_the_quote_supports": "describes lesion formation as a symptom",
+          "study_type": "laboratory study",
+          "programmatic_quote_match": true
+        }
+      ],
+      "invalid_quotes": [],
+      "unsupported_claims": [],
+      "limitations": [],
+      "quote_validation_passed": true
+    },
+    {
+      "topic": "epidemiology_and_infection",
+      "groq_claimed_status": "DIRECTLY_SUPPORTED",
+      "final_status_after_quote_check": "DIRECTLY_SUPPORTED",
+      "conclusion": "Primary inoculum is released during flowering with rain, consistent inoculum loads are needed, models are discussed, and incidence is rising.",
+      "valid_exact_quotes": [
+        {
+          "source_id": "P6",
+          "doi": "10.1094/pd-80-0322",
+          "title": "Epidemiology and Control of Grape Black Rot in Southern Switzerland",
+          "exact_quote": "Ascospores discharged mainly at the beginning of and during flowering in correspondence with initiation of rain",
+          "what_the_quote_supports": "rain during flowering triggers ascospore release",
+          "study_type": "field study",
+          "programmatic_quote_match": true
+        },
+        {
+          "source_id": "P6",
+          "doi": "10.1094/pd-80-0322",
+          "title": "Epidemiology and Control of Grape Black Rot in Southern Switzerland",
+          "exact_quote": "Loads of primary inoculum must be consistent to cause problems",
+          "what_the_quote_supports": "consistent primary inoculum load required for disease",
+          "study_type": "field study",
+          "programmatic_quote_match": true
+        },
+        {
+          "source_id": "P2",
+          "doi": "10.3390/horticulturae9020130",
+          "title": "Black Rot of Grapes (Guignardia bidwellii)—A Comprehensive Overview",
+          "exact_quote": "predictive models of black rot epidemics",
+          "what_the_quote_supports": "epidemic models are discussed",
+          "study_type": "review",
+          "programmatic_quote_match": true
+        },
+        {
+          "source_id": "P9",
+          "doi": "10.54574/rjpp.17.09",
+          "title": "GRAPE BLACK ROT (GUIGNARDIA BIDWELLII), AN INCREASED THREAT IN OSTROV - OLTINA VINE GROWING AREA",
+          "exact_quote": "signaled an increasing incidence of this disease",
+          "what_the_quote_supports": "rising disease incidence over eleven years",
+          "study_type": "field study",
+          "programmatic_quote_match": true
+        }
+      ],
+      "invalid_quotes": [],
+      "unsupported_claims": [],
+      "limitations": [],
+      "quote_validation_passed": true
+    },
+    {
+      "topic": "environmental_conditions",
+      "groq_claimed_status": "DIRECTLY_SUPPORTED",
+      "final_status_after_quote_check": "DIRECTLY_SUPPORTED",
+      "conclusion": "Rain during flowering, climate change, and temperature influence infection and control efficacy.",
+      "valid_exact_quotes": [
+        {
+          "source_id": "P9",
+          "doi": "10.54574/rjpp.17.09",
+          "title": "GRAPE BLACK ROT (GUIGNARDIA BIDWELLII), AN INCREASED THREAT IN OSTROV - OLTINA VINE GROWING AREA",
+          "exact_quote": "Increasing climate change is raising new challenges for plant protection",
+          "what_the_quote_supports": "climate change increases disease pressure",
+          "study_type": "field study",
+          "programmatic_quote_match": true
+        }
+      ],
+      "invalid_quotes": [
+        {
+          "source_id": "P6",
+          "reason": "QUOTE_NOT_FOUND_VERBATIM_IN_ABSTRACT",
+          "quote": "Ascospores discharged ... during flowering in correspondence with initiation of rain"
+        },
+        {
+          "source_id": "P4",
+          "reason": "QUOTE_NOT_FOUND_VERBATIM_IN_ABSTRACT",
+          "quote": "prior to lesion appearance ... depending on temperature"
+        }
+      ],
+      "unsupported_claims": [],
+      "limitations": [],
+      "quote_validation_passed": false
+    },
+    {
+      "topic": "pathogen_biology",
+      "groq_claimed_status": "DIRECTLY_SUPPORTED",
+      "final_status_after_quote_check": "DIRECTLY_SUPPORTED",
+      "conclusion": "Molecular and proteomic analyses reveal two species, a draft genome is available, dioxolanones act as virulence factors, spore adhesion depends on wettability, and fungicide sensitivity range is narrow.",
+      "valid_exact_quotes": [
+        {
+          "source_id": "P3",
+          "doi": "10.3852/11-242",
+          "title": "Molecular, proteomic and morphological characterization of the ascomycete Guignardia bidwellii, agent of grape black rot: a polyphasic approach to fungal identification",
+          "exact_quote": "suggested the existence of two distinct species",
+          "what_the_quote_supports": "phylogenetic diversity within isolates",
+          "study_type": "laboratory study",
+          "programmatic_quote_match": true
+        },
+        {
+          "source_id": "P8",
+          "doi": "10.36253/phyto-13516",
+          "title": "Draft genome sequence of Phyllosticta ampelicida, the cause of grapevine black rot",
+          "exact_quote": "first sequence genome assembly",
+          "what_the_quote_supports": "genome sequence provides a framework",
+          "study_type": "laboratory study",
+          "programmatic_quote_match": true
+        },
+        {
+          "source_id": "P5",
+          "doi": "10.1038/s41598-017-09157-6",
+          "title": "Phytotoxic dioxolanones are potential virulence factors in the infection process of Guignardia bidwellii",
+          "exact_quote": "potential virulence factors which cause the formation of lesions",
+          "what_the_quote_supports": "dioxolanones linked to virulence",
+          "study_type": "laboratory study",
+          "programmatic_quote_match": true
+        },
+        {
+          "source_id": "P4",
+          "doi": "10.1094/pdis.2003.87.3.273",
+          "title": "Factors Influencing the Efficacy of Myclobutanil and Azoxystrobin for Control of Grape Black Rot",
+          "exact_quote": "range of sensitivities was narrow",
+          "what_the_quote_supports": "fungicide sensitivity varies narrowly among isolates",
+          "study_type": "laboratory study",
+          "programmatic_quote_match": true
+        }
+      ],
+      "invalid_quotes": [
+        {
+          "source_id": "P7",
+          "reason": "QUOTE_NOT_FOUND_VERBATIM_IN_ABSTRACT",
+          "quote": "germinate only on substrata ... poorly wettable"
+        }
+      ],
+      "unsupported_claims": [],
+      "limitations": [],
+      "quote_validation_passed": false
+    },
+    {
+      "topic": "host_resistance",
+      "groq_claimed_status": "DIRECTLY_SUPPORTED",
+      "final_status_after_quote_check": "DIRECTLY_SUPPORTED",
+      "conclusion": "Genetic determinants of grapevine resistance are reviewed and breeding of resistant varieties is advocated.",
+      "valid_exact_quotes": [
+        {
+          "source_id": "P2",
+          "doi": "10.3390/horticulturae9020130",
+          "title": "Black Rot of Grapes (Guignardia bidwellii)—A Comprehensive Overview",
+          "exact_quote": "genetic determinants of grapevine resistance",
+          "what_the_quote_supports": "reviews genetic basis of resistance",
+          "study_type": "review",
+          "programmatic_quote_match": true
+        },
+        {
+          "source_id": "P1",
+          "doi": "10.36718/1819-4036-2026-2-15-34",
+          "title": "BLACK ROT OF GRAPES (REVIEW)",
+          "exact_quote": "develop and introduce new varieties with resistance",
+          "what_the_quote_supports": "advocates breeding resistant cultivars",
+          "study_type": "review",
+          "programmatic_quote_match": true
+        }
+      ],
+      "invalid_quotes": [],
+      "unsupported_claims": [],
+      "limitations": [],
+      "quote_validation_passed": true
+    },
+    {
+      "topic": "management_and_control",
+      "groq_claimed_status": "DIRECTLY_SUPPORTED",
+      "final_status_after_quote_check": "DIRECTLY_SUPPORTED",
+      "conclusion": "Sanitation (hand pruning) can prevent disease; myclobutanil gives complete lesion control, azoxystrobin partial control; field trials show 65–76.7% efficacy, untreated vines lose >70% yield; integrated strategies are recommended.",
+      "valid_exact_quotes": [
+        {
+          "source_id": "P6",
+          "doi": "10.1094/pd-80-0322",
+          "title": "Epidemiology and Control of Grape Black Rot in Southern Switzerland",
+          "exact_quote": "black rot disease can be avoided by sanitation measures",
+          "what_the_quote_supports": "sanitation can prevent disease",
+          "study_type": "field study",
+          "programmatic_quote_match": true
+        },
+        {
+          "source_id": "P9",
+          "doi": "10.54574/rjpp.17.09",
+          "title": "GRAPE BLACK ROT (GUIGNARDIA BIDWELLII), AN INCREASED THREAT IN OSTROV - OLTINA VINE GROWING AREA",
+          "exact_quote": "range of 65 to 76.7%",
+          "what_the_quote_supports": "field fungicide programs achieved 65–76.7% efficacy",
+          "study_type": "field study",
+          "programmatic_quote_match": true
+        },
+        {
+          "source_id": "P9",
+          "doi": "10.54574/rjpp.17.09",
+          "title": "GRAPE BLACK ROT (GUIGNARDIA BIDWELLII), AN INCREASED THREAT IN OSTROV - OLTINA VINE GROWING AREA",
+          "exact_quote": "grape yield decreased significantly by 71-73%",
+          "what_the_quote_supports": "untreated vines suffered >70% yield loss",
+          "study_type": "field study",
+          "programmatic_quote_match": true
+        }
+      ],
+      "invalid_quotes": [
+        {
+          "source_id": "P4",
+          "reason": "QUOTE_NOT_FOUND_VERBATIM_IN_ABSTRACT",
+          "quote": "myclobutanil ... provided complete control of lesion development"
+        },
+        {
+          "source_id": "P4",
+          "reason": "QUOTE_NOT_FOUND_VERBATIM_IN_ABSTRACT",
+          "quote": "azoxystrobin ... provided only 78 to 63% control of lesion formation"
+        },
+        {
+          "source_id": "P1",
+          "reason": "QUOTE_NOT_FOUND_VERBATIM_IN_ABSTRACT",
+          "quote": "integrated strategies including ... resistant cultivars"
+        }
+      ],
+      "unsupported_claims": [],
+      "limitations": [],
+      "quote_validation_passed": false
+    }
+  ],
+  "overall_evidence_gaps": [],
+  "claims_to_remove_or_rewrite": [],
+  "recommendations_for_full_text_review": [],
+  "audit": {
+    "exact_quote_validation": true,
+    "quote_errors": [],
+    "valid_quote_count": 16,
+    "invalid_quote_count": 6,
+    "all_topics_returned": true,
+    "scientific_claims_fully_verified": false,
+    "full_text_review_performed": false,
+    "q1_verified": false
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "release": "plant_disease_integrated_inference_v1",
+  "models": 5,
+  "joint_classes": 29,
+  "feature_dimensions": 290,
+  "iqa_enabled": true,
+  "leaf_verification_enabled": true,
+  "supported_taxonomy_gate_enabled": true,
+  "temperature_calibration_enabled": true,
+  "abstention_enabled": true,
+  "disease_specific_evidence_only_after_acceptance": true,
+  "fixed_test_used_for_training_or_tuning": false,
+  "module": "plant_disease_inference.py"
+}

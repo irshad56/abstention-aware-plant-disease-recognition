@@ -1,0 +1,114 @@
+{
+  "level": 1,
+  "experiment": "Independent IQA holdout validation",
+  "training_performed": false,
+  "test_set_accessed": false,
+  "calibration_images": 6027,
+  "holdout_images": 6038,
+  "calibration_errors": 0,
+  "holdout_errors": 0,
+  "calibration_thresholds": {
+    "normalized_sharpness_hard_min": 0.03596567177342163,
+    "normalized_sharpness_review_min": 0.22460325798155586,
+    "brightness_warning_min": 75.06141784667969,
+    "min_side_hard": 128,
+    "calibration_dataset": "PlantVillage leakage-safe validation",
+    "calibration_count": 6027,
+    "calibration_method": "Class-stratified 50% calibration split",
+    "hard_threshold_quantile": 0.005,
+    "review_threshold_quantile": 0.05,
+    "brightness_warning_quantile": 0.01,
+    "sharpness_formula": "Laplacian variance / (grayscale contrast squared + 1e-8)"
+  },
+  "independent_clean_holdout": {
+    "images": 6038,
+    "hard_rejections": 21,
+    "hard_rejection_rate": 0.0034779728386883074,
+    "borderline_sharpness_warnings": 311,
+    "borderline_warning_rate": 0.0515071215634316,
+    "brightness_warnings": 64,
+    "brightness_warning_rate": 0.010599536270288175
+  },
+  "holdout_degradation_tests": {
+    "blur_0.5": {
+      "hard_rejections": 1,
+      "warnings": 17,
+      "total": 64,
+      "hard_rejection_rate": 0.015625,
+      "warning_rate": 0.265625
+    },
+    "blur_1.0": {
+      "hard_rejections": 37,
+      "warnings": 27,
+      "total": 64,
+      "hard_rejection_rate": 0.578125,
+      "warning_rate": 0.421875
+    },
+    "blur_2.0": {
+      "hard_rejections": 64,
+      "warnings": 0,
+      "total": 64,
+      "hard_rejection_rate": 1.0,
+      "warning_rate": 0.0
+    },
+    "dark_0.65": {
+      "hard_rejections": 1,
+      "warnings": 35,
+      "total": 64,
+      "hard_rejection_rate": 0.015625,
+      "warning_rate": 0.546875
+    },
+    "dark_0.50": {
+      "hard_rejections": 1,
+      "warnings": 62,
+      "total": 64,
+      "hard_rejection_rate": 0.015625,
+      "warning_rate": 0.96875
+    },
+    "dark_0.35": {
+      "hard_rejections": 0,
+      "warnings": 63,
+      "total": 64,
+      "hard_rejection_rate": 0.0,
+      "warning_rate": 0.984375
+    },
+    "half_resolution": {
+      "hard_rejections": 60,
+      "warnings": 4,
+      "total": 64,
+      "hard_rejection_rate": 0.9375,
+      "warning_rate": 0.0625
+    },
+    "quarter_resolution": {
+      "hard_rejections": 64,
+      "warnings": 0,
+      "total": 64,
+      "hard_rejection_rate": 1.0,
+      "warning_rate": 0.0
+    },
+    "eighth_resolution": {
+      "hard_rejections": 64,
+      "warnings": 0,
+      "total": 64,
+      "hard_rejection_rate": 1.0,
+      "warning_rate": 0.0
+    }
+  },
+  "deployment_self_tests": {
+    "checks": {
+      "darkness_warning_without_hard_rejection": true,
+      "severe_blur_rejection": true,
+      "small_image_rejection": true,
+      "invalid_input_rejection": true,
+      "module_calibration_parity": true
+    },
+    "all_passed": true,
+    "parity_samples": 20
+  },
+  "artifacts": [
+    "/kaggle/working/kaggle_project_audit/iqa_gate.py",
+    "/kaggle/working/kaggle_project_audit/iqa_thresholds.json",
+    "/kaggle/working/kaggle_project_audit/iqa_independent_final_report.json"
+  ],
+  "runtime_seconds": 26.89
+}

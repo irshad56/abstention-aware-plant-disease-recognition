@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-11-15T00:31:57.563004+00:00",
+  "source_count": 9,
+  "topic_count": 6,
+  "citation_identity_errors": [],
+  "paper_assessment_errors": [],
+  "topic_audits": [
+    {
+      "topic": "disease_symptoms",
+      "groq_status": "DIRECTLY_SUPPORTED",
+      "audit_status": "TOPIC_TERMS_FOUND_MANUAL_CONTENT_REVIEW",
+      "citation_count": 3,
+      "valid_source_count": 3,
+      "matched_term_count": 4,
+      "matched_terms": "fruit; leaf; lesion; symptom",
+      "cited_source_ids": "P1; P5; P9",
+      "summary": "Black rot caused by G. bidwellii attacks leaves, stems, fruits, and roots (P1) and produces lesions on infected leaves via phytotoxic dioxolanones (P5). Field observations link disease to severe yield loss when uncontrolled (P9)."
+    },
+    {
+      "topic": "epidemiology_and_infection",
+      "groq_status": "DIRECTLY_SUPPORTED",
+      "audit_status": "TOPIC_TERMS_FOUND_MANUAL_CONTENT_REVIEW",
+      "citation_count": 3,
+      "valid_source_count": 3,
+      "matched_term_count": 5,
+      "matched_terms": "ascospore; epidemiology; infection; inoculum; spore",
+      "cited_source_ids": "P6; P2; P9",
+      "summary": "Primary inoculum is released during flowering with rain (P6); consistent primary inoculum load is required for disease problems. Predictive epidemic models are discussed (P2). Long‑term monitoring shows rising incidence in southern Dobrogea (P9)."
+    },
+    {
+      "topic": "environmental_conditions",
+      "groq_status": "DIRECTLY_SUPPORTED",
+      "audit_status": "WEAK_KEYWORD_SUPPORT_REVIEW",
+      "citation_count": 3,
+      "valid_source_count": 3,
+      "matched_term_count": 1,
+      "matched_terms": "temperature",
+      "cited_source_ids": "P6; P9; P4",
+      "summary": "Rain during flowering triggers ascospore discharge (P6). Climate change is cited as increasing disease pressure (P9). Fungicide efficacy is time‑sensitive, implying temperature‑dependent infection windows (P4)."
+    },
+    {
+      "topic": "pathogen_biology",
+      "groq_status": "DIRECTLY_SUPPORTED",
+      "audit_status": "TOPIC_TERMS_FOUND_MANUAL_CONTENT_REVIEW",
+      "citation_count": 5,
+      "valid_source_count": 5,
+      "matched_term_count": 8,
+      "matched_terms": "fungal; genome; genomic; molecular; pathogen; phylogenetic; proteomic; virulence",
+      "cited_source_ids": "P3; P8; P5; P7; P4",
+      "summary": "Morphological, molecular, and proteomic analyses reveal phylogenetic diversity and suggest two species within isolates (P3). Genome sequence provides a genomic framework (P8). Virulence is linked to phytotoxic dioxolanones (P5). Spore adhesion and germination depend on surface wettability (P7). Sensitivity to fungicides varies narrowly among isolates (P4)."
+    },
+    {
+      "topic": "host_resistance",
+      "groq_status": "DIRECTLY_SUPPORTED",
+      "audit_status": "TOPIC_TERMS_FOUND_MANUAL_CONTENT_REVIEW",
+      "citation_count": 2,
+      "valid_source_count": 2,
+      "matched_term_count": 2,
+      "matched_terms": "breeding; resistance",
+      "cited_source_ids": "P2; P1",
+      "summary": "Genetic determinants of grapevine resistance are reviewed (P2). Breeding for resistant varieties is advocated (P1)."
+    },
+    {
+      "topic": "management_and_control",
+      "groq_status": "DIRECTLY_SUPPORTED",
+      "audit_status": "TOPIC_TERMS_FOUND_MANUAL_CONTENT_REVIEW",
+      "citation_count": 4,
+      "valid_source_count": 4,
+      "matched_term_count": 9,
+      "matched_terms": "azoxystrobin; control; fungicide; management; myclobutanil; pruning; sanitation; spray; treatment",
+      "cited_source_ids": "P6; P4; P9; P1",
+      "summary": "Sanitation (hand pruning) can prevent disease (P6). Myclobutanil provides complete lesion control when applied 2–6 days after inoculation; azoxystrobin offers partial, variable control (P4). Field fungicide programs achieved 65–76.7 % efficacy, while untreated vines suffered >70 % yield loss (P9). Reviews recommend integrated strategies including agrotechnical measures, biological and chemical fungicides, and resistant cultivars (P1)."
+    }
+  ],
+  "limitations": [
+    "Keyword matches do not prove that a scientific claim is supported.",
+    "Abstract wording may omit relevant details present in the full paper.",
+    "Human review of the cited abstract and full text remains necessary.",
+    "This audit does not verify journal quartiles or study quality."
+  ],
+  "scientific_claims_fully_verified": false
+}

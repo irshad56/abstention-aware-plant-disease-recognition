@@ -1,0 +1,13 @@
+{
+  "normalized_sharpness_hard_min": 0.03596567177342163,
+  "normalized_sharpness_review_min": 0.22460325798155586,
+  "brightness_warning_min": 75.06141784667969,
+  "min_side_hard": 128,
+  "calibration_dataset": "PlantVillage leakage-safe validation",
+  "calibration_count": 6027,
+  "calibration_method": "Class-stratified 50% calibration split",
+  "hard_threshold_quantile": 0.005,
+  "review_threshold_quantile": 0.05,
+  "brightness_warning_quantile": 0.01,
+  "sharpness_formula": "Laplacian variance / (grayscale contrast squared + 1e-8)"
+}

@@ -1,0 +1,17 @@
+{
+  "accepted_image": {
+    "status": "ACCEPTED",
+    "route": "DISEASE_SPECIFIC_EVIDENCE",
+    "disease_agent_calls_after_test": 1
+  },
+  "abstained_image": {
+    "status": "ABSTAIN",
+    "route": "GENERIC_GUIDANCE",
+    "disease_agent_calls_total": 1,
+    "generic_guidance_calls_total": 1
+  },
+  "accepted_prediction_routed_correctly": true,
+  "abstention_blocked_disease_agent": true,
+  "groq_api_called": false,
+  "level4_routing_test_passed": true
+}

@@ -1,0 +1,308 @@
+{
+  "created_at_utc": "2026-11-15T00:34:19.969422+00:00",
+  "model": "openai/gpt-oss-120b",
+  "disease": "Grape Black Rot",
+  "pathogen": "Guignardia bidwellii / Phyllosticta ampelicida",
+  "retrieval_method": "OpenAlex discovery with Crossref metadata checks",
+  "source_count": 9,
+  "verified_quotes_reviewed": 16,
+  "quote_reviews": [
+    {
+      "source_id": "P1",
+      "doi": "10.36718/1819-4036-2026-2-15-34",
+      "topic": "disease_symptoms",
+      "relevance": "DIRECT",
+      "reason": "The quotation explicitly lists the plant organs (leaves, stems, fruits, root system) that are attacked by black rot, which directly describes disease symptoms.",
+      "defensible_claim": "Black rot of grapes attacks leaves, stems, fruits, and the root system.",
+      "limitations": [
+        "Source is a review; the statement summarizes existing knowledge rather than presenting new primary observations.",
+        "No quantitative severity or frequency of each symptom is provided."
+      ]
+    },
+    {
+      "source_id": "P5",
+      "doi": "10.1038/s41598-017-09157-6",
+      "topic": "disease_symptoms",
+      "relevance": "DIRECT",
+      "reason": "The quotation states that the pathogen causes lesion formation, which is a classic symptom of infection.",
+      "defensible_claim": "Phytotoxic dioxolanones produced by Guignardia bidwellii cause lesion formation on infected grape leaves.",
+      "limitations": [
+        "Evidence derives from laboratory detection of toxins; field symptom expression is not quantified.",
+        "The claim is limited to lesions caused by the specific toxins, not the full symptom spectrum."
+      ]
+    },
+    {
+      "source_id": "P6",
+      "doi": "10.1094/pd-80-0322",
+      "topic": "epidemiology_and_infection",
+      "relevance": "DIRECT",
+      "reason": "The quotation identifies the timing of ascospore discharge (beginning of and during flowering) and its association with rain, a key epidemiological factor.",
+      "defensible_claim": "Ascospores of Guignardia bidwellii are discharged mainly at the beginning of and during flowering, coinciding with the onset of rain.",
+      "limitations": [
+        "Study conducted in Southern Switzerland in 1996; climatic and viticultural conditions may differ elsewhere.",
+        "No quantitative spore counts or infection rates are provided."
+      ]
+    },
+    {
+      "source_id": "P6",
+      "doi": "10.1094/pd-80-0322",
+      "topic": "epidemiology_and_infection",
+      "relevance": "DIRECT",
+      "reason": "The quotation directly asserts that a consistent load of primary inoculum is required for disease problems, addressing inoculum dynamics.",
+      "defensible_claim": "Consistent loads of primary inoculum are necessary for black rot to cause significant disease.",
+      "limitations": [
+        "Qualitative statement without numerical thresholds.",
+        "Based on observations from a specific region and time period."
+      ]
+    },
+    {
+      "source_id": "P2",
+      "doi": "10.3390/horticulturae9020130",
+      "topic": "epidemiology_and_infection",
+      "relevance": "PARTIAL",
+      "reason": "The quotation mentions that predictive models of black rot epidemics exist, which is relevant but does not provide model performance or data.",
+      "defensible_claim": "Predictive models of black rot epidemics have been discussed in the literature.",
+      "limitations": [
+        "Source is a review; no specific model details or validation results are presented.",
+        "The statement does not indicate how accurate or widely applicable the models are."
+      ]
+    },
+    {
+      "source_id": "P9",
+      "doi": "10.54574/rjpp.17.09",
+      "topic": "epidemiology_and_infection",
+      "relevance": "DIRECT",
+      "reason": "The quotation reports an observed increase in disease incidence over an eleven‑year period, a direct epidemiological observation.",
+      "defensible_claim": "An eleven‑year study in Dobrogea documented an increasing incidence of black rot in the two examined grape varieties.",
+      "limitations": [
+        "Incidence is described qualitatively; exact rates or statistical analysis are not provided.",
+        "Findings are limited to two varieties and a specific geographic area."
+      ]
+    },
+    {
+      "source_id": "P9",
+      "doi": "10.54574/rjpp.17.09",
+      "topic": "environmental_conditions",
+      "relevance": "IRRELEVANT",
+      "reason": "The quotation is a general statement linking climate change to new challenges for plant protection, without concrete evidence or data linking specific environmental conditions to disease development.",
+      "defensible_claim": "Climate change is perceived as creating new challenges for plant protection in vineyards.",
+      "limitations": [
+        "No empirical data or mechanistic explanation is provided in the abstract.",
+        "The statement is speculative and does not establish a causal environmental condition."
+      ]
+    },
+    {
+      "source_id": "P3",
+      "doi": "10.3852/11-242",
+      "topic": "pathogen_biology",
+      "relevance": "DIRECT",
+      "reason": "The quotation reports that analyses suggested the existence of two distinct species within what is currently identified as Guignardia bidwellii, directly informing pathogen taxonomy.",
+      "defensible_claim": "Molecular, proteomic and morphological analyses suggest the existence of two distinct species within Guignardia bidwellii isolates.",
+      "limitations": [
+        "Based on a limited set of isolates; broader sampling may be needed.",
+        "The conclusion is inferred from polyphasic data without functional validation."
+      ]
+    },
+    {
+      "source_id": "P8",
+      "doi": "10.36253/phyto-13516",
+      "topic": "pathogen_biology",
+      "relevance": "DIRECT",
+      "reason": "The quotation announces the first draft genome assembly for Phyllosticta ampelicida, providing foundational biological information about the pathogen.",
+      "defensible_claim": "The first draft genome assembly of Phyllosticta ampelicida (30.55 Mb, 10,691 predicted genes) has been generated.",
+      "limitations": [
+        "The genome is a draft; annotation may be incomplete.",
+        "Functional insights into pathogenicity are not detailed in the abstract."
+      ]
+    },
+    {
+      "source_id": "P5",
+      "doi": "10.1038/s41598-017-09157-6",
+      "topic": "pathogen_biology",
+      "relevance": "DIRECT",
+      "reason": "The quotation identifies phytotoxic dioxolanones as potential virulence factors that cause lesion formation, directly linking a biochemical trait to pathogen biology.",
+      "defensible_claim": "Phytotoxic dioxolanones produced by Guignardia bidwellii act as potential virulence factors that induce lesion formation on grape leaves.",
+      "limitations": [
+        "The role of the toxins is described as 'potential'; causality in natural infections is not fully proven.",
+        "Findings are based on laboratory detection rather than field-pathogen interaction studies."
+      ]
+    },
+    {
+      "source_id": "P4",
+      "doi": "10.1094/pdis.2003.87.3.273",
+      "topic": "pathogen_biology",
+      "relevance": "DIRECT",
+      "reason": "The quotation reports that the distribution of sensitivities to myclobutanil among isolates is narrow, a physiological characteristic of the pathogen.",
+      "defensible_claim": "The range of sensitivities of Guignardia bidwellii isolates to the fungicide myclobutanil is narrow.",
+      "limitations": [
+        "Sensitivity data are derived from in‑vitro assays with isolates from two vineyards.",
+        "Only two fungicides are examined; broader fungicide response is not addressed."
+      ]
+    },
+    {
+      "source_id": "P2",
+      "doi": "10.3390/horticulturae9020130",
+      "topic": "host_resistance",
+      "relevance": "PARTIAL",
+      "reason": "The quotation notes that genetic determinants of grapevine resistance are a research focus, but it does not provide evidence of specific resistant genes or their effectiveness.",
+      "defensible_claim": "Genetic determinants of grapevine resistance to black rot are a subject of current research.",
+      "limitations": [
+        "The source is a review; no primary data on resistance genes are presented.",
+        "No functional validation or durability of resistance is demonstrated."
+      ]
+    },
+    {
+      "source_id": "P1",
+      "doi": "10.36718/1819-4036-2026-2-15-34",
+      "topic": "host_resistance",
+      "relevance": "PARTIAL",
+      "reason": "The quotation advocates developing and introducing new resistant varieties, which is relevant to host resistance strategy but does not provide empirical evidence of resistance.",
+      "defensible_claim": "Developing and introducing new grape varieties with resistance to black rot is recommended.",
+      "limitations": [
+        "No data on existing resistant cultivars or their performance are supplied.",
+        "Statement is a recommendation within a review article."
+      ]
+    },
+    {
+      "source_id": "P6",
+      "doi": "10.1094/pd-80-0322",
+      "topic": "management_and_control",
+      "relevance": "PARTIAL",
+      "reason": "The quotation suggests that sanitation measures can avoid black rot, which is a management recommendation; the abstract does not quantify efficacy.",
+      "defensible_claim": "Sanitation measures may allow avoidance of black rot disease in vineyards.",
+      "limitations": [
+        "No quantitative data on disease reduction are provided.",
+        "The claim is based on authors' suggestion rather than a controlled efficacy trial."
+      ]
+    },
+    {
+      "source_id": "P9",
+      "doi": "10.54574/rjpp.17.09",
+      "topic": "management_and_control",
+      "relevance": "DIRECT",
+      "reason": "The quotation gives a specific efficacy range (65–76.7 %) for fungicide treatments, directly evidencing control performance.",
+      "defensible_claim": "Fungicide treatment schemes achieved a disease‑control efficacy ranging from 65 % to 76.7 % in the 2024 field trials.",
+      "limitations": [
+        "Trials were conducted on two farms and two grape varieties; broader applicability is uncertain.",
+        "Details on experimental design, replication, and statistical significance are not provided in the abstract."
+      ]
+    },
+    {
+      "source_id": "P9",
+      "doi": "10.54574/rjpp.17.09",
+      "topic": "management_and_control",
+      "relevance": "DIRECT",
+      "reason": "The quotation reports a significant yield loss (71–73 %) in untreated control plots, demonstrating the impact of disease when no control is applied.",
+      "defensible_claim": "In untreated control plots, grape yield decreased by 71 %–73 % due to black rot.",
+      "limitations": [
+        "Yield loss is reported qualitatively; exact statistical analysis is absent.",
+        "Results pertain to the specific study area and varieties examined."
+      ]
+    }
+  ],
+  "final_topic_synthesis": [
+    {
+      "topic": "disease_symptoms",
+      "status": "SUPPORTED",
+      "summary": "Black rot of grapes manifests as attacks on leaves, stems, fruits, and roots, and induces lesion formation on infected foliage.",
+      "direct_source_ids": [
+        "P1",
+        "P5"
+      ],
+      "partial_source_ids": [],
+      "limitations": [
+        "Evidence derives from review summaries and laboratory studies; field quantification of symptom severity is lacking."
+      ]
+    },
+    {
+      "topic": "epidemiology_and_infection",
+      "status": "SUPPORTED",
+      "summary": "Ascospore discharge peaks at flowering coincident with rain, consistent primary inoculum loads are required for disease development, and an eleven‑year observation records increasing disease incidence. Predictive epidemic models have been discussed in the literature.",
+      "direct_source_ids": [
+        "P6",
+        "P9"
+      ],
+      "partial_source_ids": [
+        "P2"
+      ],
+      "limitations": [
+        "Most data are region‑specific (Switzerland, Romania) and may not extrapolate globally.",
+        "Predictive models are mentioned without performance metrics."
+      ]
+    },
+    {
+      "topic": "environmental_conditions",
+      "status": "NOT_ESTABLISHED",
+      "summary": "The abstract provides only a general statement that climate change poses new challenges for plant protection, without concrete evidence linking specific environmental conditions to black rot dynamics.",
+      "direct_source_ids": [],
+      "partial_source_ids": [],
+      "limitations": [
+        "No quantitative or mechanistic data on temperature, humidity, or other environmental variables are presented."
+      ]
+    },
+    {
+      "topic": "pathogen_biology",
+      "status": "SUPPORTED",
+      "summary": "Molecular and proteomic analyses suggest two distinct species within Guignardia bidwellii, a draft genome of Phyllosticta ampelicida is now available, phytotoxic dioxolanones act as potential virulence factors, and isolates display a narrow range of sensitivity to myclobutanil.",
+      "direct_source_ids": [
+        "P3",
+        "P4",
+        "P5",
+        "P8"
+      ],
+      "partial_source_ids": [],
+      "limitations": [
+        "Findings are based on limited isolate collections and draft genomic data; functional validation of pathogenicity traits remains incomplete."
+      ]
+    },
+    {
+      "topic": "host_resistance",
+      "status": "PARTIALLY_SUPPORTED",
+      "summary": "Research attention is given to genetic determinants of grapevine resistance, and breeding of new resistant varieties is advocated, but no primary data confirming effective resistance are provided.",
+      "direct_source_ids": [],
+      "partial_source_ids": [
+        "P1",
+        "P2"
+      ],
+      "limitations": [
+        "Both sources are reviews or recommendations; no experimental validation of resistance genes or cultivars is presented."
+      ]
+    },
+    {
+      "topic": "management_and_control",
+      "status": "SUPPORTED",
+      "summary": "Sanitation measures are suggested to prevent disease, fungicide programs achieved 65–76.7 % control efficacy, and lack of treatment resulted in 71–73 % yield loss, indicating that control interventions can markedly reduce disease impact.",
+      "direct_source_ids": [
+        "P9"
+      ],
+      "partial_source_ids": [
+        "P6"
+      ],
+      "limitations": [
+        "Efficacy figures stem from a limited field trial; broader agronomic contexts and long‑term sustainability are not addressed."
+      ]
+    }
+  ],
+  "overall_limitations": [
+    "Many conclusions rely on review articles rather than primary experimental data.",
+    "Geographic scope is narrow (Switzerland, Romania, limited vineyards), limiting generalizability.",
+    "Quantitative details (e.g., infection rates, model accuracy, statistical significance) are often absent from abstracts.",
+    "Potential bias toward positive findings in the cited studies."
+  ],
+  "recommended_full_text_priorities": [
+    "P2 (Horticulturae 2023) – to obtain details on predictive epidemic models and genetic resistance studies.",
+    "P1 (Bulletin of KSAU 2026) – to assess any primary data supporting resistant variety development.",
+    "P6 (Plant Disease 1996) – to evaluate the experimental basis for sanitation recommendations.",
+    "P9 (Romanian Journal for Plant Protection 2024) – to review the full methodology and statistical analysis of the fungicide efficacy and yield loss data.",
+    "P4 (Plant Disease 2003) – to explore the implications of the narrow fungicide‑sensitivity range for resistance management."
+  ],
+  "integrity_checks": {
+    "source_identity_errors": [],
+    "relevance_label_errors": [],
+    "source_identity_check_passed": true,
+    "all_quote_reviews_matched_input": true,
+    "scientific_claims_fully_verified": false,
+    "full_text_review_performed": false,
+    "journal_quartiles_verified": false
+  }
+}

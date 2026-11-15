@@ -1,0 +1,115 @@
+{
+  "experiment": "openalex_groq_grounded_evidence_test",
+  "timestamp_utc": "2026-11-15T00:16:33.323062+00:00",
+  "disease": "Grape Black Rot",
+  "pathogen": "Guignardia bidwellii",
+  "retrieval_provider": "OpenAlex",
+  "llm_provider": "Groq",
+  "llm_model": "openai/gpt-oss-120b",
+  "papers_found": 25,
+  "papers_selected": 5,
+  "papers_with_abstracts": 5,
+  "papers_with_doi": 5,
+  "papers": [
+    {
+      "paper_number": 1,
+      "title": "Studies on Colletotrichum acutatum and Greeneria uvicola: Two fungi associated with bunch rot of grapes in sub-tropical Australia",
+      "authors": [
+        "Christopher C. Steel",
+        "Lindsay A. Greer",
+        "Sandra Savocchia"
+      ],
+      "journal": "Australian Journal of Grape and Wine Research",
+      "publication_year": 2007,
+      "doi": "https://doi.org/10.1111/j.1755-0238.2007.tb00068.x",
+      "url": "https://doi.org/10.1111/j.1755-0238.2007.tb00068.x",
+      "abstract": "Vineyards in the Hunter Valley and Hastings Valley (sub-tropical NSW) were examined by unaided eye for visible symptoms of bunch rot diseases at berry maturity in 2003 (for a total of five varieties over seven vineyards). Grey mould (Botrytis cinerea) was evident in three vineyards, and ripe rot (Colletotrichum acutatum) was evident in four of those seven vineyards surveyed. Other bunch rots at six of the vineyards could not be readily identified by visual inspection. The incidence of fungi on grapevine reproductive structures (and potentially bunch-rot fungi) was then recorded for a Cabernet Sauvignon vineyard in the Hastings Valley during the 2004/5 and 2005/6 growing seasons, and outcomes are reported here in some detail. By berry maturity, C. acutatum and Greeneria uvicola (bitter rot) were the predominant pathogens isolated from those structures, and constitute the first such report of bitter rot fungi on wine grapes in Australia. Indeed, the frequency of latent infection by C. acutatum and G. uvicola increased with berry development during the growing season. Other fungi isolated included Alternaria spp., Botryosphaeria spp., Cladosporium spp., Epicoccum sp., Fusarium spp., Nigrospora spp., Pestalotia spp., Phomopsis viticola and Trichoderma spp. Isolation of B. cinerea from this vineyard was rare. Infection of various wine grape varieties in vitro with C. acutatum and G. uvicola at post veraison revealed all varieties to be susceptible over a range of temperatures (20—35oC). Based on laboratory studies, there was no infection of berries at a relative humidity (RH) < 50%, and infection diminished at 87% RH. Infection did occur if the berries were first incubated at 100% RH for 24 hours, and then transferred to an environment of lower humidity.",
+      "citation_count": 47
+    },
+    {
+      "paper_number": 2,
+      "title": "Black Rot of Grapes (Guignardia bidwellii)—A Comprehensive Overview",
+      "authors": [
+        "Márton Szabó",
+        "Anna Csikász-Krizsics",
+        "T. Dula",
+        "Eszter Farkas",
+        "Dóra Roznik",
+        "Pál Kozma",
+        "Tamás Deák"
+      ],
+      "journal": "Horticulturae",
+      "publication_year": 2023,
+      "doi": "https://doi.org/10.3390/horticulturae9020130",
+      "url": "https://doi.org/10.3390/horticulturae9020130",
+      "abstract": "The aim of this review is to provide readers with an integrated knowledge on black rot of grapes, based on a critical survey of previous and recent studies of scientific importance. The current state of the art and perspectives of science are presented, not only on the genetic determinants of grapevine resistance to black rot, predictive models of black rot epidemics, but also on the potential of metabolomics to explore black rot-grape interactions and shorten plant breeding processes. Numerous complications of disease management and ambiguities in phenotype-classification are highlighted, and by exploring the limitations and inconsistencies of previous studies, insights into key dilemmas and controversial findings are also provided, suggesting future research directions. Much research has been conducted, but biochemical and molecular studies of the true interactions between grapevine and Guignardia bidwellii are still rarity.",
+      "citation_count": 42
+    },
+    {
+      "paper_number": 3,
+      "title": "Integrated Control of Grape Black Rot: Influence of Host Phenology, Inoculum Availability, Sanitation, and Spray Timing",
+      "authors": [
+        "Lisa Emele Hoffman",
+        "Wayne F. Wilcox",
+        "David M. Gadoury",
+        "Robert C. Seem",
+        "Duane G. Riegel"
+      ],
+      "journal": "Phytopathology",
+      "publication_year": 2004,
+      "doi": "https://doi.org/10.1094/phyto.2004.94.6.641",
+      "url": "https://doi.org/10.1094/phyto.2004.94.6.641",
+      "abstract": "ABSTRACT The epidemiology and control of black rot (Guignardia bidwellii) was studied from 1995 to 1999 in vineyards in Dresden and Naples, NY, where disease pressure was moderate and extreme, respectively. The efficacy of serial applications of myclobutanil, provided at 2-week intervals and varied with respect to their number and time of initiation, was examined within the context of host phenology, inoculum availability, and sanitation. At Dresden, sprays applied over 4 weeks through the immediate prebloom stage provided only 13 to 91% control of diseased clusters, despite the release of 95% of the season's ascosporic inoculum during the period of fungicidal protection. However, applications immediately prior to bloom plus 2 and 4 weeks later, which afforded protection while fruit are highly susceptible to infection, provided virtually complete control. At Naples, where mummified berries were retained in the canopy after mechanical pruning, this same regime provided only approximately 80% disease control, but applying a fourth spray 2 weeks prebloom generally improved control. Hand-pruning mummies to the ground in selected plots significantly (P </= 0.05) improved control in some spray regimes. Although this sanitation practice did not affect inoculum dynamics through bloom, very few spores were recovered thereafter from mummies collected from the ground, whereas abundant ascospores and conidia were recovered from mummies in the trellis for an additional 6 to 8 weeks.",
+      "citation_count": 40
+    },
+    {
+      "paper_number": 4,
+      "title": "Insights into Grape Ripe Rot: A Focus on the Colletotrichum gloeosporioides Species Complex and Its Management Strategies",
+      "authors": [
+        "Ting-Fang Hsieh",
+        "Yuan‐Min Shen",
+        "Jin-Hsing Huang",
+        "Jyh‐Nong Tsai",
+        "Ming-Te Lu",
+        "C. P. Lin"
+      ],
+      "journal": "Plants",
+      "publication_year": 2023,
+      "doi": "https://doi.org/10.3390/plants12152873",
+      "url": "https://doi.org/10.3390/plants12152873",
+      "abstract": "Grape ripe rot, which is predominantly caused by the Colletotrichum species, presents a growing threat to global grape cultivation. This threat is amplified by the increasing populations of the Colletotrichum species in response to warmer climates. In this review, we investigate the wide-ranging spectrum of grape ripe rot, specifically highlighting the role and characteristics of the C. gloeosporioides species complex (CGSC). We incorporate this understanding as we explore the diverse symptoms that lead to infected grapevines, their intricate life cycle and epidemiology, and the escalating prevalence of C. viniferum in Asia and globally. Furthermore, we delve into numerous disease management strategies, both conventional and emerging, such as prevention and mitigation measures. These strategies include the examination of host resistances, beneficial cultivation practices, sanitation measures, microbiome health maintenance, fungicide choice and resistance, as well as integrated management approaches. This review seeks to enhance our understanding of this globally significant disease, aspiring to assist in the development and improvement of effective prevention and control strategies.",
+      "citation_count": 32
+    },
+    {
+      "paper_number": 5,
+      "title": "Cover crop differentially affects arthropods, but not diseases, occurring on grape leaves in vineyards: Cover crop effect on grapevine leaf communities",
+      "authors": [
+        "Fanny Vogelweith",
+        "Denis Thiéry"
+      ],
+      "journal": "Australian Journal of Grape and Wine Research",
+      "publication_year": 2017,
+      "doi": "https://doi.org/10.1111/ajgw.12290",
+      "url": "https://doi.org/10.1111/ajgw.12290",
+      "abstract": "Background and Aims Cover crop has become a common management practice in viticulture. It improves the structure and protects the soil, enhances natural enemy populations and also reduces the vigour of the vine. Here, we investigated the effect of cover crop in vineyards on grapevine diseases and arthropods present on leaves. Methods and Results We measured the presence of the pathogens Plasmopara viticola, Uncinula necator and Guignardia bidwellii and monitored six common beneficial/pest arthropods: Panonychus ulmi, Orthotydeus lambi, Typhlodromus pyri, Scaphoideus titanus and Phalangium opilio in vineyards with cover crop or bare soil in 2014 and 2015. The density of the two pests P. ulmi and S. titanus and the beneficial mite O. lambi was lower in cover crop, while the density of the beneficial predatory mite T. pyri was higher in cover crop. We found no influence of cover crop on P. opilio and on the presence of grapevine diseases. Conclusions These findings point to a simple way to increase the population of beneficial arthropods and reduce pest arthropods, which could help integrated pest management programs. Significance of the Study To our knowledge, this is the first study monitoring the cover crop influence on both diseases and arthropods. It would help growers to optimise space management between rows to enhance their natural enemy populations while reducing pesticide application.",
+      "citation_count": 30
+    }
+  ],
+  "grounded_report": "**Grape Black Rot (caused by *Guignardia bidwellii*) – Evidence‑Based Brief**\n\n---\n\n### 1. Disease overview (grounded in the supplied records)\n\n*Black rot* is a fungal disease of Vitis spp. caused by the ascomycete *Guignardia bidwellii*. The pathogen produces ascospores and conidia that infect berries, especially around bloom and early fruit development. The disease can lead to severe yield loss when infection is not controlled.  \n\nThe five retrieved papers provide the following **direct evidence** about black rot:\n\n| Paper | Core relevance to *G. bidwellii* |\n|------|-----------------------------------|\n| **3. Hoffman et al., 2004** – “Integrated Control of Grape Black Rot” | Experimental field study of epidemiology, inoculum sources, and fungicide‑spray programmes. |\n| **2. Szabó et al., 2023** – “Black Rot of Grapes (Guignardia bidwellii)—A Comprehensive Overview” | Review summarising genetics of resistance, predictive models and management challenges (no new primary data). |\n| **5. Vogelweith & Thiéry, 2017** – “Cover crop … on grapevine leaf communities” | Survey of disease presence; reports *G. bidwellii* incidence was **not** altered by cover‑crop vs. bare‑soil. |\n| **1. Steel et al., 2007** – “Studies on *Colletotrichum* acutatum and *Greeneria* uvicola” | Documents other bunch‑rot fungi; *G. bidwellii* is **not** a focus, so provides only contextual background. |\n| **4. Hsieh et al., 2023** – “Insights into Grape Ripe Rot” | Focuses on *Colletotrichum* spp.; no direct information on black rot. |\n\n---\n\n### 2. Main findings across the studies  \n\n| Aspect | Evidence (abstract‑derived) |\n|--------|-----------------------------|\n| **Epidemiology** | • In NY vineyards, 95 % of the season’s ascosporic inoculum was released **before bloom** (Hoffman et al., 2004). <br>• Retained mummified berries on the canopy act as a **continuous inoculum source** for 6–8 weeks after bloom (Hoffman et al., 2004). |\n| **Symptoms** | The supplied abstracts **do not describe** the visual symptoms of black rot (e.g., black lesions on berries, shriveled mummies). |\n| **Disease pressure** | Two contrasting sites were studied: moderate pressure (Dresden, NY) vs. extreme pressure (Naples, NY) (Hoffman et al., 2004). |\n| **Management – Fungicide timing** | • Serial applications of **myclobutanil** every 2 weeks gave 13–91 % control when applied **pre‑bloom only** (Hoffman et al., 2004). <br>• A regime of sprays **immediately before bloom, +2 weeks, +4 weeks** (covering the period of highest berry susceptibility) achieved **near‑complete control** (Hoffman et al., 2004). <br>• Adding a **fourth spray** (2 weeks pre‑bloom) improved control in the high‑pressure site (Hoffman et al., 2004). |\n| **Management – Sanitation** | Hand‑pruning and removing mummified berries **to the ground** significantly improved disease control in several spray regimes (Hoffman et al., 2004). |\n| **Management – Cultural practice (cover crop)** | No detectable effect of a cover‑crop on the **presence** of *G. bidwellii* on leaves (Vogelweith & Thiéry, 2017). |\n| **Research gaps / challenges** | The 2023 review highlights **ambiguities in phenotype classification**, limited molecular insight into host‑pathogen interaction, and the need for better predictive models (Szabó et al., 2023). |\n\n---\n\n### 3. Symptoms & epidemiology (where supported)\n\n| Item | Supported by abstract? |\n|------|------------------------|\n| Typical black‑rot lesions on berries, mummified fruit, leaf spots | **Not described** in any supplied abstract. |\n| Primary infection period: **pre‑bloom** (ascospore release) | **Supported** – Hoffman et al., 2004. |\n| Inoculum reservoirs: **mummified berries** remaining on vines | **Supported** – Hoffman et al., 2004. |\n| Influence of humidity, temperature, or cultivar susceptibility | **Not provided** for *G. bidwellii* (only reported for *C. acutatum* & *G. uvicola* in paper 1). |\n| Geographic variation in disease pressure | **Supported** – moderate vs. extreme pressure sites in NY (Hoffman et al., 2004). |\n\n---\n\n### 4. Management implications (directly supported)\n\n| Practice | Evidence from abstracts | Practical take‑away |\n|----------|------------------------|---------------------|\n| **Fungicide programme** (myclobutanil) | Near‑complete control when sprays are timed **pre‑bloom + 2 wks + 4 wks**; additional pre‑bloom spray helps under high pressure (Hoffman et al., 2004). | Prioritise spray applications that protect the **high‑susceptibility window** around bloom; consider a fourth early spray in severe epidemics. |\n| **Sanitation** (removal of mummified berries) | Hand‑pruning mummies to the ground reduced inoculum and improved control (Hoffman et al., 2004). | Incorporate **post‑harvest sanitation** (ground removal of mummies) as a core cultural tactic. |\n| **Cover‑crop adoption** | No measurable impact on *G. bidwellii* incidence (Vogelweith & Thiéry, 2017). | Cover crops can be used for arthropod management **without expecting black‑rot suppression**. |\n| **Resistance breeding / predictive modelling** | Review notes the scarcity of molecular data and the need for better predictive models (Szabó et al., 2023). | Investment in **genetic resistance screening** and **epidemic forecasting tools** is warranted, but concrete recommendations are not yet available. |\n\n---\n\n### 5. Ranked list of the five supplied papers  \n\n| Rank | Paper # | Full citation (clickable DOI) | Relevance to *G. bidwellii* |\n|------|--------|------------------------------|-----------------------------|\n| **1** | 3 | Hoffman LE, Wilcox WF, Gadoury DM, Seem RC, Riegel DG. *Integrated Control of Grape Black Rot: Influence of Host Phenology, Inoculum Availability, Sanitation, and Spray Timing.* **Phytopathology**. 2004;94(6):641‑652. DOI: [10.1094/phyto.2004.94.6.641](https://doi.org/10.1094/phyto.2004.94.6.641) | Direct experimental data on epidemiology and control. |\n| **2** | 2 | Szabó M, Csikász‑Krizsics A, Dula T, Farkas E, Roznik D, Kozma P, Deák T. *Black Rot of Grapes (Guignardia bidwellii)—A Comprehensive Overview.* **Horticulturae**. 2023;9(2):130. DOI: [10.3390/horticulturae9020130](https://doi.org/10.3390/horticulturae9020130) | Recent review summarising genetics, modelling and management gaps. |\n| **3** | 5 | Vogelweith F, Thiéry D. *Cover crop differentially affects arthropods, but not diseases, occurring on grape leaves in vineyards: Cover crop effect on grapevine leaf communities.* **Australian Journal of Grape and Wine Research**. 2017. DOI: [10.1111/ajgw.12290](https://doi.org/10.1111/ajgw.12290) | Provides field evidence that cover crops do not alter black‑rot incidence. |\n| **4** | 1 | Steel CC, Greer LA, Savocchia S. *Studies on Colletotrichum acutatum and Greeneria uvicola: Two fungi associated with bunch rot of grapes in sub‑tropical Australia.* **Australian Journal of Grape and Wine Research**. 2007;13(4):215‑227. DOI: [10.1111/j.175",
+  "usage": {
+    "queue_time": 0.469096247,
+    "prompt_tokens": 2433,
+    "prompt_time": 0.210371519,
+    "completion_tokens": 2500,
+    "completion_time": 5.204495361,
+    "total_tokens": 4933,
+    "total_time": 5.41486688,
+    "completion_tokens_details": {
+      "reasoning_tokens": 545
+    }
+  },
+  "q1_quartile_verified": false,
+  "api_key_exposed": false,
+  "training_performed": false,
+  "production_modified": false
+}

@@ -1,0 +1,148 @@
+{
+  "release": "Level 4 Integrated Plant Disease Deployment",
+  "created_utc": "2026-11-14T23:55:20.694290+00:00",
+  "package": "LEVEL4_INTEGRATED_DEPLOYMENT_RELEASE.zip",
+  "package_sha256": "34f89bcac435b778d692b6a31b7953127e502ee53e924dbd2fca9c315f0ee105",
+  "packaged_file_count": 24,
+  "required_artifacts_verified": 16,
+  "dependencies": {
+    "torch": true,
+    "torchvision": true,
+    "timm": true,
+    "numpy": true,
+    "PIL": true,
+    "sklearn": true,
+    "joblib": true,
+    "pandas": true
+  },
+  "inference_engine_loaded": true,
+  "agent_safety_bridge_loaded": true,
+  "abstention_safety_invariant": true,
+  "integrated_validation_safety_passed": true,
+  "agent_routing_test_passed": true,
+  "original_checkpoints_modified": false,
+  "training_performed": false,
+  "thresholds_modified": false,
+  "files": [
+    {
+      "path": "agent_safety_bridge.py",
+      "size_bytes": 2434,
+      "sha256": "7b153174587f72032fcb51d0f42f56a26f8395efbbe156ff2997c51daea626c6"
+    },
+    {
+      "path": "agent_safety_bridge_test_report.json",
+      "size_bytes": 349,
+      "sha256": "0c421296f5b34a0a97c1c342d83cbf96c7128ffd8bd7dfc0def200a4f50d97fb"
+    },
+    {
+      "path": "checkpoints/ConvNeXtV2_Tiny_best.pt",
+      "size_bytes": 111719825,
+      "sha256": "b739df78eaf15e3a8f2782b71fd33914f99fbbd9c2e99006fc8f778887e9657b"
+    },
+    {
+      "path": "checkpoints/DINOv2_Small_best.pt",
+      "size_bytes": 88385051,
+      "sha256": "19122d1e0b9f0068c35c07b863f71b32643eedb5a5517a60df9823693489c672"
+    },
+    {
+      "path": "checkpoints/EfficientNetV2_S_best.pt",
+      "size_bytes": 81907819,
+      "sha256": "6d7b7b4142e3a63738316986870688f9467ebb34cef4968fc28dc3b1c2ffbf78"
+    },
+    {
+      "path": "checkpoints/MaxViT_Tiny_best.pt",
+      "size_bytes": 122165391,
+      "sha256": "4526c203abdfaa67b1fdc13c91e70e8819bb58d606c28004867107c4c3e0178a"
+    },
+    {
+      "path": "checkpoints/Swin_Tiny_best.pt",
+      "size_bytes": 110321667,
+      "sha256": "c26e1559a04ce48ac4601ecb5ec6f05cb5dcc462f7b6130aee496645133a7201"
+    },
+    {
+      "path": "checkpoints/leaf_verifier_resnet18_domain_adapted.pth",
+      "size_bytes": 44791691,
+      "sha256": "57db71d7849510a9632435d49fcbac069adedafdcfd7921ebf052dfbbdf9d87d"
+    },
+    {
+      "path": "decision_layer_config.json",
+      "size_bytes": 2335,
+      "sha256": "30d04e5171c98dc490a7f56ade40101050f2d73853171b7bcec6491933f128df"
+    },
+    {
+      "path": "feature_schema.json",
+      "size_bytes": 421,
+      "sha256": "9a72a4fdaca44b9b36cfabec921cbc791eab0c02d1a74a4630f9cfa3af8a6468"
+    },
+    {
+      "path": "frozen_preprocessing_config.json",
+      "size_bytes": 1399,
+      "sha256": "03b85726212a33b849986b839b242d6a4fe676b86a9419a54a05227336eed1a8"
+    },
+    {
+      "path": "leaf_verification/leaf_verifier_resnet18_domain_adapted.pth",
+      "size_bytes": 44791691,
+      "sha256": "57db71d7849510a9632435d49fcbac069adedafdcfd7921ebf052dfbbdf9d87d"
+    },
+    {
+      "path": "leaf_verifier_config.json",
+      "size_bytes": 974,
+      "sha256": "6e2731aa0a57321e7c0b8c32020ae98813304d357e2487fb2e44c6d2de565c4e"
+    },
+    {
+      "path": "level4_agent_routing_test_report.json",
+      "size_bytes": 455,
+      "sha256": "28485331c644d5f6a509f2f76630d3acb0f119f46ede3a054fd0c194ae2ce699"
+    },
+    {
+      "path": "plant_disease_inference.py",
+      "size_bytes": 16862,
+      "sha256": "c78cc184f25883fa910852d2cb585fb355029800a13636d698d671118673f8f5"
+    },
+    {
+      "path": "probability_disease_adapter.joblib",
+      "size_bytes": 38673,
+      "sha256": "f5c2570d20e29a4769a997e0a9dfa070816a0d80bafe3901b51c55aa2e60f8df"
+    },
+    {
+      "path": "probability_taxonomy_gate.joblib",
+      "size_bytes": 10641,
+      "sha256": "7fd7ede50d7bfce22e2c381773a3d4e0ed40e7d7691239b0eba68c3b2985d3c6"
+    },
+    {
+      "path": "quality_gate/iqa_gate.py",
+      "size_bytes": 4479,
+      "sha256": "eaa30d0b8bd5165c8fa582915d5af589b282563036e59875cdc2972383e8c6bd"
+    },
+    {
+      "path": "quality_gate/iqa_independent_final_report.json",
+      "size_bytes": 3208,
+      "sha256": "9429e4fee375e4f7975274db980c9495b5e2e04b87ae054e349b887814cc6233"
+    },
+    {
+      "path": "quality_gate/iqa_thresholds.json",
+      "size_bytes": 542,
+      "sha256": "86b17652b15addb2302bb7407cb3302f5388448712800702bf80c457a45cb016"
+    },
+    {
+      "path": "release_manifest.json",
+      "size_bytes": 451,
+      "sha256": "5ccadfff62a6930a6808935b3f550b1817cef49121a114bf0ebcb8e0b0ebb2b5"
+    },
+    {
+      "path": "reports/agent_safety_bridge_test_report.json",
+      "size_bytes": 349,
+      "sha256": "0c421296f5b34a0a97c1c342d83cbf96c7128ffd8bd7dfc0def200a4f50d97fb"
+    },
+    {
+      "path": "reports/level4_agent_routing_test_report.json",
+      "size_bytes": 455,
+      "sha256": "28485331c644d5f6a509f2f76630d3acb0f119f46ede3a054fd0c194ae2ce699"
+    },
+    {
+      "path": "reports/level4_integrated_validation_report.json",
+      "size_bytes": 705,
+      "sha256": "ef0c84ef1ac75f251c540efa167cc0f4f07ce5194db902dfb5906139903e4e11"
+    }
+  ]
+}

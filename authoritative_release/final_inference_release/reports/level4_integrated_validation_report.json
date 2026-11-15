@@ -1,0 +1,23 @@
+{
+  "validation_type": "group_disjoint_validation_calibration_real_images",
+  "manifest": "/kaggle/working/plant_disease_completion/reports/level3_group_aware_verification/group_aware_partition_assignments.csv",
+  "images_evaluated": 32,
+  "fixed_test_images_used": 0,
+  "training_performed": false,
+  "threshold_tuning_performed": false,
+  "status_counts": {
+    "ABSTAIN": 19,
+    "ACCEPTED": 13
+  },
+  "stage_counts": {
+    "DISEASE_CONFIDENCE": 14,
+    "COMPLETE": 13,
+    "SUPPORTED_TAXONOMY": 5
+  },
+  "accepted_count": 13,
+  "abstained_count": 19,
+  "error_count": 0,
+  "accepted_predictions_allow_evidence": true,
+  "non_accepted_predictions_block_evidence": true,
+  "safety_checks_passed": true
+}

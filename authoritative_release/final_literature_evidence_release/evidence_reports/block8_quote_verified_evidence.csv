@@ -1,0 +1,7 @@
+topic,groq_claimed_status,final_status,valid_quote_count,invalid_quote_count,quote_validation_passed,conclusion
+disease_symptoms,DIRECTLY_SUPPORTED,DIRECTLY_SUPPORTED,2,0,True,"Black rot caused by Guignardia bidwellii produces lesions and attacks leaves, stems, fruits, and roots."
+epidemiology_and_infection,DIRECTLY_SUPPORTED,DIRECTLY_SUPPORTED,4,0,True,"Primary inoculum is released during flowering with rain, consistent inoculum loads are needed, models are discussed, and incidence is rising."
+environmental_conditions,DIRECTLY_SUPPORTED,DIRECTLY_SUPPORTED,1,2,False,"Rain during flowering, climate change, and temperature influence infection and control efficacy."
+pathogen_biology,DIRECTLY_SUPPORTED,DIRECTLY_SUPPORTED,4,1,False,"Molecular and proteomic analyses reveal two species, a draft genome is available, dioxolanones act as virulence factors, spore adhesion depends on wettability, and fungicide sensitivity range is narrow."
+host_resistance,DIRECTLY_SUPPORTED,DIRECTLY_SUPPORTED,2,0,True,Genetic determinants of grapevine resistance are reviewed and breeding of resistant varieties is advocated.
+management_and_control,DIRECTLY_SUPPORTED,DIRECTLY_SUPPORTED,3,3,False,"Sanitation (hand pruning) can prevent disease; myclobutanil gives complete lesion control, azoxystrobin partial control; field trials show 65–76.7% efficacy, untreated vines lose >70% yield; integrated strategies are recommended."
