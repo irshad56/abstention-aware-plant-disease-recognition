@@ -52,21 +52,36 @@ class AuthoritativeInferenceWrapper:
             return
 
         checkpoints_dir = self.release_dir / "checkpoints"
-        expected_models = [
+        leaf_dir = self.release_dir / "leaf_verification"
+        leaf_dir.mkdir(parents=True, exist_ok=True)
+
+        leaf_file = "leaf_verifier_resnet18_domain_adapted.pth"
+        leaf_in_leaf_dir = leaf_dir / leaf_file
+        leaf_in_ckpt_dir = checkpoints_dir / leaf_file
+
+        # Ensure leaf verifier exists in leaf_verification directory
+        if not leaf_in_leaf_dir.exists() and leaf_in_ckpt_dir.exists():
+            import shutil
+            shutil.copy2(leaf_in_ckpt_dir, leaf_in_leaf_dir)
+        elif not leaf_in_ckpt_dir.exists() and leaf_in_leaf_dir.exists():
+            import shutil
+            shutil.copy2(leaf_in_leaf_dir, leaf_in_ckpt_dir)
+
+        expected_disease_models = [
             ("ConvNeXtV2_Tiny", "ConvNeXtV2_Tiny_best.pt"),
             ("DINOv2_Small", "DINOv2_Small_best.pt"),
             ("EfficientNetV2_S", "EfficientNetV2_S_best.pt"),
             ("MaxViT_Tiny", "MaxViT_Tiny_best.pt"),
             ("Swin_Tiny", "Swin_Tiny_best.pt"),
-            ("leaf_verifier", "leaf_verifier_resnet18_domain_adapted.pth"),
         ]
 
-        # Check file existence
         missing = []
-        for name, ckpt in expected_models:
+        for name, ckpt in expected_disease_models:
             p = checkpoints_dir / ckpt
             if not p.exists():
                 missing.append(ckpt)
+        if not leaf_in_leaf_dir.exists():
+            missing.append(f"leaf_verification/{leaf_file}")
 
         if missing:
             self.load_status = {

@@ -177,14 +177,14 @@ def main():
 
         st.subheader("Authoritative 4-Level Architecture")
         if engine_wrapper.is_ready:
-            st.success("● Level 1: Image Quality Gate: Ready", icon="✔")
-            st.success("● Level 2: ResNet18 Leaf Verifier: Ready", icon="✔")
-            st.success("● Level 3: Taxonomy & OOD Gate: Ready", icon="✔")
-            st.success("● Level 4: 5-Model Disease Ensemble: Ready", icon="✔")
+            st.success("● Level 1: Image Quality Gate: Ready", icon="✅")
+            st.success("● Level 2: ResNet18 Leaf Verifier: Ready", icon="✅")
+            st.success("● Level 3: Taxonomy & OOD Gate: Ready", icon="✅")
+            st.success("● Level 4: 5-Model Disease Ensemble: Ready", icon="✅")
             st.caption("Models: ConvNeXtV2-Tiny, DINOv2-Small, EfficientNetV2-S, MaxViT-Tiny, Swin-Tiny")
             st.caption(f"Joint Taxonomy: **{engine_wrapper.load_status.get('joint_classes', 29)} Classes** | Feature Dim: **290**")
         else:
-            st.error("✕ Authoritative Models Not Ready", icon="✕")
+            st.error("Authoritative Models Not Ready — check logs for details.", icon="🚨")
             st.caption(engine_wrapper.load_status.get("error", "Unknown error"))
 
         st.divider()
@@ -562,17 +562,17 @@ def main():
             """
             ### 1. The Four-Level Architecture
             1. **Level 1 — Image Quality Assessment (IQA Gate):**
-               - Evaluates image sharpness (Laplacian variance / contrast squared), mean brightness, and image resolution ($min\_side \ge 128$).
+               - Evaluates image sharpness (Laplacian variance / contrast squared), mean brightness, and image resolution (min_side >= 128 px).
                - Rejects severely blurred or dark images before any deep learning forward passes.
             2. **Level 2 — Leaf vs Non-Leaf Verification:**
-               - Domain-adapted ResNet18 trained to distinguish foliage from non-foliar objects ($threshold = 0.2502$).
+               - Domain-adapted ResNet18 trained to distinguish foliage from non-foliar objects (threshold = 0.2502).
                - Rejects vehicles, everyday objects, and background noise.
             3. **Level 3 — Supported Taxonomy & OOD Gate:**
-               - 290-dimensional feature vector ($[p, \log(p)]$ across all 5 disease models).
-               - Logistic regression classifier distinguishing supported crop taxa from novel species ($threshold = 0.2772$).
+               - 290-dimensional feature vector ([p, log(p)] across all 5 disease models).
+               - Logistic regression classifier distinguishing supported crop taxa from novel species (threshold = 0.2772).
             4. **Level 4 — Diverse 5-Model Disease Recognition Ensemble:**
                - **ConvNeXtV2_Tiny** (CNN), **DINOv2_Small** (ViT), **EfficientNetV2_S** (NAS), **MaxViT_Tiny** (Hybrid), and **Swin_Tiny** (Shifted Window).
-               - 29 joint disease classes with temperature-calibrated scaling ($T = 1.3955$, $\tau_{\text{conf}} = 0.7334$).
+               - 29 joint disease classes with temperature-calibrated scaling (T = 1.3955, tau_conf = 0.7334).
 
             ### 2. Agent Safety Bridge & Grounded Evidence
             - Guarantees that unconfirmed, blurry, or out-of-distribution inputs **never** trigger LLM evidence generation.
